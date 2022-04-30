@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chathura&family=Fredericka+the+Great&family=Open+Sans&family=Tulpen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     
 </head>
 <body>
-    <header>
+    <!-- Anchor tag to skip to main content-->
+    <a href="#home-main" class="skip-link">Skip to main content.</a>
+    <header class="main-page-header">
     <!-- Hero image displayed in header -->
+    
         <nav>
             <ul>
                 <li><a href="./index.html">HOME</a></li>
@@ -19,7 +27,7 @@
                 <li><a href="./contact.html">CONTACT</a></li>
             </ul>
         </nav>
-
+        <div class="header-flex">
         <div class="header-h2">
             <h2>Bar-One <span>Place to be</span></h2>
         </div>
@@ -27,20 +35,25 @@
         <div class="offset-header-image">
             <img src="./assets/header-box.jpg" alt="Black and white image of a wine glass hanger filled with wine glasses">
         </div>
-       
+    </div> 
     </header>
 
-    <main>
-        <section class="">
+    <main id="home-main">
+        <section class="space-community">
             <div class="wrapper">
-                <ul>
-                    <li>
-                        <a href="#">
+                <!-- <ul>
+                    <li> -->
+                        <i ></i>
+                     
+                        <a href="#" class="fa fa-flip">hello</a>
+                             
+
                             <h3>New space</h3>
+                              
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis laborum earum exercitationem. Consequuntur debitis dicta officia optio minima
                             </p> 
-                        </a>
-                    </li>
+                       
+                    <!-- </li>
                     <li>
                         <a href="#">
                             <h3>Community</h3>
@@ -59,24 +72,29 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis laborum earum exercitationem. Consequuntur debitis dicta officia optio minima</p>
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </section>
 
-        <section>
-            <div class="plan-locations wrapper">
+        <section class="plan-locations">
+            <div class="wrapper">
+                <div class="plan-ahead">
+                    <div class="plan-ahead-image">
+                        <img src="./assets/left-image.jpg" alt="Angles view of chicly lit bar">    
+                    </div>
 
-                <div class="plan-ahead-image">
-                    <img src="./assets/left-image.jpg" alt="Angles view of chicly lit bar">    
+                    <div class="plan-ahead-text">
+                        <h3>Plan ahead</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ut assumenda enim maxime facilis earum, nemo est veritatis eum id numquam commodi distinctio ex dolores inventore sapiente. Quasi, blanditiis laudantium.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
                 </div>
 
-                <div class="plan-ahead-text">
-                    <h3>Plan ahead</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ut assumenda enim maxime facilis earum, nemo est veritatis eum id numquam commodi distinctio ex dolores inventore sapiente. Quasi, blanditiis laudantium.</p>
-                    <a href="#">Read More</a>
-                </div>
 
-                <div class="new-locations-text">
+
+
+                <!-- <div class="new-locations-text">
                     <h3>New locations</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ut assumenda enim maxime facilis earum, nemo est veritatis eum id numquam commodi distinctio ex dolores inventore sapiente. Quasi, blanditiis laudantium.</p>
                     <a href="#">Read More</a>
@@ -84,15 +102,15 @@
 
                 <div class="new-locations-image">
                     <img src="./assets/right-image.jpg" alt="Angles view of patrons sitting at a bar in the daytime">
-                </div>
+                </div> -->
                       
-            </div>
+         
         </section>
 
         <section class="host-a-party">
             <div class="wrapper">
                 <h3>Want to host a party?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima, iure ducimus quas, adipisci soluta, repellat impedit rem consequuntur id blanditiis molestias voluptate ratione reprehenderit consequatur voluptatum commodi error modi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima, iure ducimus quas, adipisci soluta, repellat impedit rem consequuntur id blanditiis molestias voluptate ratione!</p>
                 <a href="#">Find Out More</a>
             </div>
         </section>

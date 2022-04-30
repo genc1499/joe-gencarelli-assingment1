@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chathura&family=Fredericka+the+Great&family=Open+Sans&family=Tulpen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+     <!-- Anchor tag to skip to main content-->
+     <a href="#blog-main" class="skip-link">Skip to main content.</a>
     <header class="contact-header">
         <!-- Hero image displayed in header -->
          <div class="wrapper">
@@ -24,7 +30,7 @@
          </div>
     </header>
 
-    <main>
+    <main id="blog-main">
         <section class="blog-post-text">
             <div class="wrapper">
                 <div class="mission">
@@ -85,7 +91,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error earum eum natus autem. Iusto eligendi fugit, magni nulla sapiente tempore, repudiandae nihil aspernatur, in ullam obcaecati. Corrupti ad modi quaerat?</p>
                         </div>
 
-                        <form>
+                        <form class="blog-form">
                         <lable for="text" class="name-label">Name</lable>
                         <input type="text" id="name" placeholder="Name">
 
@@ -97,7 +103,7 @@
 
                         <button class="blog-form-button">Post Comment</button>    
                         </form>
-                        
+
                     </div><!-- Close Comments section --> 
                 </div> <!--Close mission div-->
              </div>    <!-- close wrapper -->

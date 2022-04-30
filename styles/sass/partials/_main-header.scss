@@ -1,0 +1,132 @@
+.main-page-header{
+    background-image:url('../assets/home-image-1.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    width:100vw;
+    position:relative;
+    z-index:-10;
+    
+    ul{
+        display:flex;
+        justify-content: center;
+        padding-top:20px;
+        color:$primary;
+
+        li{
+            margin:0 2%;
+        }
+        li:nth-child(1){
+                margin-top:2%;   
+        }
+        li:nth-child(2){
+            margin-top:2%;   
+        }
+        li:nth-child(4){
+            margin-top:2%;   
+        }
+        li:nth-child(5){
+            margin-top:2%;   
+        }   
+    }
+
+    h2{
+        color:$tertiary;
+        font-size:13.07rem;
+        font-family:$barOne;
+        text-align:center;
+        
+
+        span{
+            display: block;
+            color:$primary;
+            font-family: $bodyFont;
+            font-weight:700;
+            line-height:94.7px;
+            letter-spacing:2.6px;
+            font-size:4.16rem;
+            margin-right: 38%;
+            margin-top: -20%;
+        }   
+    }
+
+    .header-flex{
+        display:flex;
+        justify-content:center;
+
+        .offset-header-image{
+            position: absolute;
+            z-index: -1;
+            right: 0;
+            top: 300px;
+        }
+    }
+}
+
+.space-community{
+    background-color: $quaternary;
+    position:relative;
+    z-index:-20;
+    padding:120px 0 120px 0;
+
+  
+
+    ul{
+        display:flex;
+        flex-wrap:wrap;
+
+        li{
+            flex-basis: calc(100% / 2) - 2%;
+         
+        }
+    }
+  
+}
+
+.plan-locations{
+    background-color:$quinary;
+    padding:120px 0 120px 0;
+    position:relative;
+
+    .plan-ahead{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:flex-end;
+        
+
+      .plan-ahead-image{ 
+          width:45%;
+          position:absolute;
+            left:-50px;
+            top:0;      
+            
+            img{
+                width:100%;
+            }
+            
+        }
+
+        .plan-ahead-text{
+        width:35%;
+        
+        p{
+            margin:2% 0;
+        }
+    }
+        
+    a{
+        background-color: $secondary;
+        font-family:$barOne;
+        font-weight:400;
+        width: 30%;
+        padding: 7px 14px;
+        text-align: center;
+        font-size: 1.8rem;
+       
+    }
+    
+    }
+   
+}
