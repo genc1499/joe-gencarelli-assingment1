@@ -26,16 +26,16 @@
   margin: 0 2%;
 }
 .main-page-header ul li:nth-child(1) {
-  margin-top: 2%;
+  padding-top: 48px;
 }
 .main-page-header ul li:nth-child(2) {
-  margin-top: 2%;
+  padding-top: 48px;
 }
 .main-page-header ul li:nth-child(4) {
-  margin-top: 2%;
+  padding-top: 48px;
 }
 .main-page-header ul li:nth-child(5) {
-  margin-top: 2%;
+  padding-top: 48px;
 }
 .main-page-header h2 {
   color: #FF8327;
@@ -89,8 +89,20 @@
 
 .plan-locations {
   background-color: #220303;
-  padding: 120px 0 120px 0;
+  padding: 50px 0 120px 0;
   position: relative;
+}
+.plan-locations a {
+  background-color: #BF2603;
+  font-family: "Tulpen One";
+  font-weight: 400;
+  width: 30%;
+  padding: 7px 14px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.plan-locations img {
+  width: 100%;
 }
 .plan-locations .plan-ahead {
   display: -webkit-box;
@@ -105,26 +117,132 @@
 .plan-locations .plan-ahead .plan-ahead-image {
   width: 45%;
   position: absolute;
-  left: -50px;
-  top: 0;
-}
-.plan-locations .plan-ahead .plan-ahead-image img {
-  width: 100%;
+  left: 0px;
+  top: -45px;
+  -webkit-box-shadow: 25px 25px 0px 0px #FF8327;
+          box-shadow: 25px 25px 0px 0px #FF8327;
 }
 .plan-locations .plan-ahead .plan-ahead-text {
-  width: 35%;
+  width: 40%;
 }
 .plan-locations .plan-ahead .plan-ahead-text p {
-  margin: 2% 0;
+  margin: 3% 0;
 }
-.plan-locations .plan-ahead a {
+.plan-locations .new-locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.plan-locations .new-locations .new-locations-image {
+  width: 45%;
+  position: absolute;
+  right: 0px;
+  bottom: -45px;
+  -webkit-box-shadow: -25px -25px 0px 0px #FF8327;
+          box-shadow: -25px -25px 0px 0px #FF8327;
+}
+.plan-locations .new-locations .new-locations-text {
+  width: 40%;
+  margin-top: 5%;
+}
+.plan-locations .new-locations .new-locations-text p {
+  margin: 3% 0;
+}
+
+.host-a-party {
+  background-color: #111010;
+  padding: 120px 0 120px 0;
+}
+.host-a-party h3 {
+  color: #FF8327;
+  text-align: center;
+}
+.host-a-party a {
   background-color: #BF2603;
   font-family: "Tulpen One";
   font-weight: 400;
-  width: 30%;
+  width: 25%;
   padding: 7px 14px;
   text-align: center;
   font-size: 1.8rem;
+  margin: 0 auto;
+}
+
+.beer-image {
+  background-image: url("../assets/banner-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  width: 100vw;
+}
+
+.events {
+  background-color: #111010;
+  padding: 100px 0 100px 0;
+}
+.events .events-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.events .events-image {
+  width: 50%;
+  -webkit-box-shadow: 25px 25px 0 0 #FF8327;
+          box-shadow: 25px 25px 0 0 #FF8327;
+}
+.events .events-image img {
+  width: 100%;
+}
+.events .events-text {
+  width: auto;
+  margin-left: 6%;
+}
+.events .events-text h3 {
+  color: #FF8327;
+}
+.events .events-text a {
+  background-color: #BF2603;
+  font-family: "Tulpen One";
+  font-weight: 400;
+  width: 25%;
+  padding: 7px 14px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.main-footer {
+  background-color: #220303;
+}
+.main-footer .image-gallery {
+  padding: 50px 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-footer .image-gallery li {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.main-footer .copyright-text {
+  text-align: center;
+  background-color: grey;
+  padding: 5px;
+  font-family: "Tulpen One";
+}
+.main-footer .copyright-text p {
+  margin: 0;
 }
 
 html {
@@ -404,7 +522,6 @@ nav {
 
 h1 {
   font-family: "Tulpen One";
-  margin: 0;
 }
 
 a {

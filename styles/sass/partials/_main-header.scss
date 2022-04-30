@@ -19,16 +19,16 @@
             margin:0 2%;
         }
         li:nth-child(1){
-                margin-top:2%;   
+            padding-top:48px;   
         }
         li:nth-child(2){
-            margin-top:2%;   
+            padding-top:48px;    
         }
         li:nth-child(4){
-            margin-top:2%;   
+            padding-top:48px;   
         }
         li:nth-child(5){
-            margin-top:2%;   
+            padding-top:48px;  
         }   
     }
 
@@ -87,8 +87,22 @@
 
 .plan-locations{
     background-color:$quinary;
-    padding:120px 0 120px 0;
+    padding:50px 0 120px 0;
     position:relative;
+
+    a{
+        background-color: $secondary;
+        font-family:$barOne;
+        font-weight:400;
+        width: 30%;
+        padding: 7px 14px;
+        text-align: center;
+        font-size: 1.8rem;  
+        }
+    
+    img{
+        width:100%
+    }
 
     .plan-ahead{
         display:flex;
@@ -99,34 +113,147 @@
       .plan-ahead-image{ 
           width:45%;
           position:absolute;
-            left:-50px;
-            top:0;      
-            
-            img{
-                width:100%;
-            }
-            
+          left:0px;
+          top:-45px;    
+          box-shadow: 25px 25px 0px 0px $tertiary; 
+
+           
         }
 
         .plan-ahead-text{
-        width:35%;
+        width:40%;
         
         p{
-            margin:2% 0;
+            margin:3% 0;
         }
     }
         
+     
+    
+    }
+    .new-locations{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:flex-start;
+        
+
+      .new-locations-image{ 
+          width:45%;
+          position:absolute;
+          right:0px;
+          bottom:-45px;    
+          box-shadow: -25px -25px 0px 0px $tertiary; 
+
+           
+        }
+
+        .new-locations-text{
+        width:40%;
+        margin-top:5%;
+        
+        p{
+            margin:3% 0;
+        }
+    }
+        
+     
+}
+}
+
+// Host a party section
+.host-a-party{
+    background-color:$quaternary;
+    padding:120px 0 120px 0;
+
+    // Change color on h3
+    h3{
+        color:$tertiary;
+        text-align:center;
+    }
+
+    // Style anchor tag
     a{
         background-color: $secondary;
         font-family:$barOne;
         font-weight:400;
-        width: 30%;
+        width: 25%;
         padding: 7px 14px;
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1.8rem;  
+        margin:0 auto;
+    }
+}
+
+// Banner image section
+.beer-image{
+    background-image:url('../assets/banner-image.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height:50vh;
+    width:100vw;
+}
+
+// Events Section
+.events{
+    background-color:$quaternary;
+    padding:100px 0 100px 0;
+    .events-content{
+        display:flex;
+    }
+    .events-image{
+        width:50%;
+        box-shadow:25px 25px 0 0 $tertiary;
        
+        img{
+            width:100%;
+           
+        }
     }
+    .events-text{
+        width: auto;
+        margin-left: 6%;
+        h3{
+            color:$tertiary;
+        }
+        a{
+            background-color: $secondary;
+            font-family:$barOne;
+            font-weight:400;
+            width: 25%;
+            padding: 7px 14px;
+            text-align: center;
+            font-size: 1.8rem;  
+        }
+    }
+}
+
+// footer styling
+
+// use flex-box so eahc image is side-by-sode
+.main-footer{
+    background-color:$quinary;
     
+    .image-gallery{
+        padding:50px 0 50px 0;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        
+        // set the width of each li
+        li{
+            flex-basis:30%;
+        }
     }
-   
+    // copywrite text
+    .copyright-text{
+        text-align:center;
+        background-color:grey;
+        padding:5px;
+        font-family:$barOne;
+        p{
+            margin:0;
+        }
+    }
 }

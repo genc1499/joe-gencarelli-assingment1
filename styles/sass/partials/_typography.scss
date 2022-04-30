@@ -5,25 +5,17 @@ html{
     color:$primary;
     font-family:$bodyFont;
 }
-// body{
-//     font-family:$bodyFont;
-//     font-size:1.95rem;
-//     line-height:30px;
-//     letter-spacing:1.9px;
-// }
+
 nav{
     font-family:$bodyFont;
     font-weight:700;
     font-size:1.9rem;
     line-height:29px;
     letter-spacing: 1.9px;
-   
-
 }
 
 h1{
-    font-family:$barOne;
-    margin:0;  
+    font-family:$barOne; 
 }
 
 // Remove anchor tag default styles
@@ -56,3 +48,4 @@ h3{
     line-height:30px;
     letter-spacing:1.9px;
  }
+
