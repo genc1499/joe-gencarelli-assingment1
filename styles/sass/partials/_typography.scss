@@ -49,3 +49,40 @@ h3{
     letter-spacing:1.9px;
  }
 
+//  Nav styles
+ nav ul{
+    display:flex;
+    justify-content: center;
+    padding-top:20px;
+    color:$primary;
+
+    li{
+        margin:0 2%;
+    }
+    li:nth-child(1){
+        padding-top:48px;   
+    }
+    li:nth-child(2){
+        padding-top:48px;    
+    }
+    li:nth-child(4){
+        padding-top:48px;   
+    }
+    li:nth-child(5){
+        padding-top:48px;  
+    }   
+}
+
+// Footer Styles
+
+// Footer styles
+   
+footer{
+    text-align:center;
+    background-color:grey;
+    padding:5px;
+    font-family:$barOne;
+    p{
+        margin:0;
+    }
+}

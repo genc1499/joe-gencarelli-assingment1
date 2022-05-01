@@ -9,39 +9,22 @@
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
-  position: relative;
-  z-index: -10;
-}
-.main-page-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 20px;
-  color: #FFFFFF;
-}
-.main-page-header ul li {
-  margin: 0 2%;
-}
-.main-page-header ul li:nth-child(1) {
-  padding-top: 48px;
-}
-.main-page-header ul li:nth-child(2) {
-  padding-top: 48px;
-}
-.main-page-header ul li:nth-child(4) {
-  padding-top: 48px;
-}
-.main-page-header ul li:nth-child(5) {
-  padding-top: 48px;
 }
 .main-page-header h2 {
   color: #FF8327;
   font-size: 13.07rem;
   font-family: "Tulpen One";
   text-align: center;
+  margin-bottom: 0;
+  display: inline;
+  z-index: 100;
+  position: relative;
+}
+.main-page-header h2::before {
+  content: "Palce to be";
+  font-size: 3.6rem;
+  display: block;
+  margin-top: 20px;
 }
 .main-page-header h2 span {
   display: block;
@@ -64,7 +47,6 @@
 }
 .main-page-header .header-flex .offset-header-image {
   position: absolute;
-  z-index: -1;
   right: 0;
   top: 300px;
 }
@@ -217,11 +199,11 @@
   font-size: 1.8rem;
 }
 
-.main-footer {
+.image-gallery {
   background-color: #220303;
-}
-.main-footer .image-gallery {
   padding: 50px 0 50px 0;
+}
+.image-gallery ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,18 +213,9 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.main-footer .image-gallery li {
+.image-gallery ul li {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
-}
-.main-footer .copyright-text {
-  text-align: center;
-  background-color: grey;
-  padding: 5px;
-  font-family: "Tulpen One";
-}
-.main-footer .copyright-text p {
-  margin: 0;
 }
 
 html {
@@ -551,4 +524,57 @@ p {
   font-size: 1.95rem;
   line-height: 30px;
   letter-spacing: 1.9px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  color: #FFFFFF;
+}
+nav ul li {
+  margin: 0 2%;
+}
+nav ul li:nth-child(1) {
+  padding-top: 48px;
+}
+nav ul li:nth-child(2) {
+  padding-top: 48px;
+}
+nav ul li:nth-child(4) {
+  padding-top: 48px;
+}
+nav ul li:nth-child(5) {
+  padding-top: 48px;
+}
+
+footer {
+  text-align: center;
+  background-color: grey;
+  padding: 5px;
+  font-family: "Tulpen One";
+}
+footer p {
+  margin: 0;
+}
+
+.contact-header {
+  background-image: url("../assets/contact-header-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  width: 100vw;
+}
+
+.contact {
+  background-color: #111010;
+}
+
+.social-media-icons a {
+  display: inline;
 }

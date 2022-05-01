@@ -1,0 +1,20 @@
+// Display header image
+
+.contact-header{
+    background-image: url("../assets/contact-header-1.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height:50vh;
+    width:100vw;
+}
+
+// Styles for main content
+
+.contact{
+    background-color:$quaternary;
+    }
+    // Align socila media icons so they sit beside eachother
+    .social-media-icons a{
+        display:inline;
+    } 
