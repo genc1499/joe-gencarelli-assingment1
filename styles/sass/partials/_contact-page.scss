@@ -7,14 +7,128 @@
     background-repeat:no-repeat;
     min-height:50vh;
     width:100vw;
+   
+    // Style H2 - "Get in touch"
+    h2{
+        font-size:3.4rem;
+        line-height:58px;
+        letter-spacing:2.2px;
+        font-weight:bold;
+    }
 }
 
 // Styles for main content
 
 .contact{
     background-color:$quaternary;
+    padding:100px 0 100px 0;
+    // Flex social-contact
+
+    // Flex container so contact info and form are side-by-side
+    .contact-info{
+        display:flex;
+        justify-content: space-between;
     }
+    .social-contact{
+        display:flex;
+        flex-direction:column;
+        width:30%;
+    }
+    .address-contact{
+        font-size:1.95rem; 
+
+        // Chnage line height to keep list items tighter
+        li{
+            line-height:30px;
+            // Add margin-bottom on the email address 
+            &:nth-child(1){
+                margin-bottom:15px;
+            }
+        }
+    }
+    
     // Align socila media icons so they sit beside eachother
-    .social-media-icons a{
-        display:inline;
-    } 
+   
+    .social-media{
+        display:flex; 
+         // Add space between each icon
+        li{
+            flex-basis:10%;
+        }
+        
+    }
+
+    // Form styling
+    form{
+        background-color: $quinary;
+        width:60%;
+        color:$primary;
+        border:40px solid $quinary;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        position:absolute;
+        top:75px;
+        right:25px
+        
+
+        // Input field styling
+        input[type=text], input[type=email]{
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        outline:none;
+        background-color:$quinary;
+        width:calc((100% / 2) - 10px);
+        
+        
+         // Style placeholder text for input and textarea
+            &::placeholder{
+                color:$primary;
+                font-family:$bodyFont;
+            }
+        }
+        // textarea styling
+        input[type=textarea]{
+            width:100%;
+            height:250px;
+            outline:none;
+            background-color:$quinary;
+            margin-top:5%;
+
+            // Style placeholder text for input and textarea
+                &::placeholder{
+                color:$primary;
+                font-family:$bodyFont;
+                }
+        }
+        // Button styles
+        button{
+        background-color: $secondary;
+        color:$primary;
+        font-family:$barOne;
+        font-weight:400;
+        width: 100%;
+        padding: 3px 14px;
+        text-align: center;
+        font-size: 1.8rem;
+        border:none;
+        margin-top:2%;
+        }
+
+    }
+       
+
+        label{
+            position:absolute;
+        }
+        
+    }
+    
+
+    
+
+
+
+    
+ 

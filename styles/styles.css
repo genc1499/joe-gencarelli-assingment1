@@ -562,6 +562,10 @@ footer p {
   margin: 0;
 }
 
+label {
+  visibility: hidden;
+}
+
 .contact-header {
   background-image: url("../assets/contact-header-1.jpg");
   background-size: cover;
@@ -570,11 +574,136 @@ footer p {
   min-height: 50vh;
   width: 100vw;
 }
+.contact-header h2 {
+  font-size: 3.4rem;
+  line-height: 58px;
+  letter-spacing: 2.2px;
+  font-weight: bold;
+}
 
 .contact {
   background-color: #111010;
+  padding: 100px 0 100px 0;
 }
-
-.social-media-icons a {
-  display: inline;
+.contact .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact .social-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+.contact .address-contact {
+  font-size: 1.95rem;
+}
+.contact .address-contact li {
+  line-height: 30px;
+}
+.contact .address-contact li:nth-child(1) {
+  margin-bottom: 15px;
+}
+.contact .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact .social-media li {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+.contact form {
+  background-color: #220303;
+  width: 60%;
+  color: #FFFFFF;
+  border: 40px solid #220303;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 20px;
+}
+.contact form input[type=text], .contact form input[type=email] {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  outline: none;
+  background-color: #220303;
+  width: calc(50% - 10px);
+}
+.contact form input[type=text]::-webkit-input-placeholder, .contact form input[type=email]::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+}
+.contact form input[type=text]::-moz-placeholder, .contact form input[type=email]::-moz-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+}
+.contact form input[type=text]:-ms-input-placeholder, .contact form input[type=email]:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+}
+.contact form input[type=text]::-ms-input-placeholder, .contact form input[type=email]::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+}
+.contact form input[type=text]::placeholder, .contact form input[type=email]::placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+}
+.contact form input[type=textarea] {
+  width: 100%;
+  height: 250px;
+  outline: none;
+  background-color: #220303;
+  margin-top: 5%;
+}
+.contact form input[type=textarea]::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+}
+.contact form input[type=textarea]::-moz-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+}
+.contact form input[type=textarea]:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+}
+.contact form input[type=textarea]::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+}
+.contact form input[type=textarea]::placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+}
+.contact form button {
+  background-color: #BF2603;
+  color: #FFFFFF;
+  font-family: "Tulpen One";
+  font-weight: 400;
+  width: 100%;
+  padding: 3px 14px;
+  text-align: center;
+  font-size: 1.8rem;
+  border: none;
+  margin-top: 2%;
+}
+.contact label {
+  position: absolute;
 }

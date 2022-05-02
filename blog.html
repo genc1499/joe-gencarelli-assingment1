@@ -10,6 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Chathura&family=Fredericka+the+Great&family=Open+Sans&family=Tulpen+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
+<style>
+  body{
+      background-color: black;;
+  }
+
+ 
+</style>
 <body>
      <!-- Anchor tag to skip to main content-->
      <a href="#blog-main" class="skip-link">Skip to main content.</a>
@@ -39,7 +46,10 @@
                         <div class="mission-image">
                             <img src="./assets/sidebar-image.jpg" alt="Bartender pouring a beer from the tap">
                         </div>
-
+                        <button id="myButton">our misson</button>
+                        <div id="myDiv">
+                            <p>our miss is Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima dolores quaerat eveniet odio porro, illum sit doloribus libero nulla fugit fugiat. Neque laudantium error quas officiis dolorem assumenda possimus perferendis!</p>
+                        </div>
                         <div class="mission-text">
                             <h3>Our mission</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit sint porro magni.</p>
@@ -116,6 +126,13 @@
         </div>
     </footer>
 
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+$('#myButton').click(function() {
+  $('#myDiv').toggle('slow', function() {
+    // Animation complete.
+  });
+});
+    </script>
 </body>
 </html>
