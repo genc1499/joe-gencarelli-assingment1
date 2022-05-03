@@ -6,10 +6,14 @@
     background-repeat: no-repeat;
     height:100vh;
     width:100vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+   
 
 
 
-
+// H2 in header style with span 'Place to be"
     h2{
         color:$tertiary;
         font-size:13.07rem;
@@ -19,13 +23,9 @@
         display:inline;
         z-index:100;
         position:relative;
-        &::before{
-            content:"Palce to be";
-            font-size:3.6rem;
-            display:block;
-            margin-top:20px;
-        }
-
+        letter-spacing:2.4px;
+        font-weight:400;
+    
         span{
             display: block;
             color:$primary;
@@ -40,25 +40,22 @@
     }
 
     .header-flex{
-        display:flex;
-        justify-content:center;
-
+        margin-top:15%
+        // Position second image absolute 
+    }
         .offset-header-image{
             position: absolute;
-         
             right: 0;
             top: 300px;
         }
     }
-}
+
 
 .space-community{
     background-color: $quaternary;
     position:relative;
     z-index:-20;
-    padding:120px 0 120px 0;
-
-  
+    padding:120px 0 80px 0;
 
     ul{
         display:flex;
@@ -74,17 +71,18 @@
 
 .plan-locations{
     background-color:$quinary;
-    padding:50px 0 120px 0;
-    position:relative;
-
+    padding:50px 0 60px 0;
+    position: relative;
+   
     a{
         background-color: $secondary;
         font-family:$barOne;
         font-weight:400;
         width: 30%;
-        padding: 7px 14px;
+        padding: 7px 40px;
         text-align: center;
         font-size: 1.8rem;  
+        display:inline;
         }
     
     img{
@@ -98,22 +96,16 @@
         
 
       .plan-ahead-image{ 
-          width:45%;
-          position:absolute;
-          left:0px;
-          top:-45px;    
+          width:45%;    
           box-shadow: 25px 25px 0px 0px $tertiary; 
-
-           
+          position:absolute;
+          left:0;
+          top:-27px;  
         }
 
         .plan-ahead-text{
         width:40%;
-        
-        p{
-            margin:3% 0;
         }
-    }
         
      
     
@@ -122,13 +114,14 @@
         display:flex;
         flex-wrap:wrap;
         justify-content:flex-start;
+        margin-top:10%;
         
 
       .new-locations-image{ 
           width:45%;
-          position:absolute;
-          right:0px;
-          bottom:-45px;    
+            position:absolute;
+        right:0px;
+            bottom:-45px;    
           box-shadow: -25px -25px 0px 0px $tertiary; 
 
            
@@ -136,10 +129,10 @@
 
         .new-locations-text{
         width:40%;
-        margin-top:5%;
-        
+        text-align:right;
+
         p{
-            margin:3% 0;
+            text-align:left;
         }
     }
         

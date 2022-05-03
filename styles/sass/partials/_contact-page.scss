@@ -21,8 +21,8 @@
 
 .contact{
     background-color:$quaternary;
-    padding:100px 0 100px 0;
-    // Flex social-contact
+    padding:100px 0 200px 0;
+
 
     // Flex container so contact info and form are side-by-side
     .contact-info{
@@ -35,7 +35,7 @@
         width:30%;
     }
     .address-contact{
-        font-size:1.95rem; 
+        font-size:1rem; 
 
         // Chnage line height to keep list items tighter
         li{
@@ -60,75 +60,26 @@
 
     // Form styling
     form{
-        background-color: $quinary;
-        width:60%;
-        color:$primary;
-        border:40px solid $quinary;
-        display:flex;
-        flex-wrap:wrap;
-        justify-content: space-between;
         position:absolute;
-        top:75px;
-        right:25px
-        
-
-        // Input field styling
-        input[type=text], input[type=email]{
-        border-top-style: hidden;
-        border-right-style: hidden;
-        border-left-style: hidden;
-        outline:none;
-        background-color:$quinary;
-        width:calc((100% / 2) - 10px);
-        
-        
-         // Style placeholder text for input and textarea
-            &::placeholder{
-                color:$primary;
-                font-family:$bodyFont;
-            }
-        }
-        // textarea styling
-        input[type=textarea]{
-            width:100%;
-            height:250px;
-            outline:none;
-            background-color:$quinary;
-            margin-top:5%;
-
-            // Style placeholder text for input and textarea
-                &::placeholder{
-                color:$primary;
-                font-family:$bodyFont;
-                }
-        }
-        // Button styles
-        button{
-        background-color: $secondary;
-        color:$primary;
-        font-family:$barOne;
-        font-weight:400;
-        width: 100%;
-        padding: 3px 14px;
-        text-align: center;
-        font-size: 1.8rem;
-        border:none;
-        margin-top:2%;
-        }
-
-    }
-       
-
+        top:300px;
+        right:100px;
+        padding:40px 50px;
         label{
-            position:absolute;
+            width:calc((100% / 2) - 10px);
         }
-        
+
+       .message-label{
+            position:absolute;
+            left: 23px;
+            top: 110px;  
+        }
     }
+        
     
-
     
+           
 
 
 
-    
- 
+}
+

@@ -12,6 +12,34 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
+<style>
+    @media screen and (max-width:600px){
+    
+        
+        .social-contact{
+            margin-top:95%;
+            flex-direction:row;
+            align-items:center;
+            flex-grow: 1;
+        }
+
+        form{
+            width:80%;
+            flex-direction:column;
+        }
+
+        .wrapper{
+            width:90%;
+        }
+
+        input[type=text]{
+            width:100%;
+        }
+
+    }
+
+</style>
+
 <body>
      <!-- Anchor tag to skip to main content-->
     <a href="#contact-main" class="skip-link">Skip to main content.</a>
@@ -51,16 +79,18 @@
                         </ul>
                     </div>
 
-
+                    
                     <form class="contact-form">
+                        
                         <label for="text" class="name-label">Name</label>
-                        <input type="text" id="name" placeholder="Name">
-
                         <label for="email" class="email-label">Email address</label>
-                        <input type="email" id="email" placeholder="Email Address">
+                        <input type="text" id="name">
+
+                        
+                        <input type="email" id="email">
 
                         <label for="message" class="message-label">Message</label>
-                        <input type="textarea" id="message" placeholder="Message">
+                        <input type="textarea" id="message">
 
                         <button class="contact-form-button">Submit</button>
                     </form>

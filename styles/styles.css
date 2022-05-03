@@ -9,6 +9,16 @@
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .main-page-header h2 {
   color: #FF8327;
@@ -19,12 +29,8 @@
   display: inline;
   z-index: 100;
   position: relative;
-}
-.main-page-header h2::before {
-  content: "Palce to be";
-  font-size: 3.6rem;
-  display: block;
-  margin-top: 20px;
+  letter-spacing: 2.4px;
+  font-weight: 400;
 }
 .main-page-header h2 span {
   display: block;
@@ -38,14 +44,9 @@
   margin-top: -20%;
 }
 .main-page-header .header-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-top: 15%;
 }
-.main-page-header .header-flex .offset-header-image {
+.main-page-header .offset-header-image {
   position: absolute;
   right: 0;
   top: 300px;
@@ -55,7 +56,7 @@
   background-color: #111010;
   position: relative;
   z-index: -20;
-  padding: 120px 0 120px 0;
+  padding: 120px 0 80px 0;
 }
 .space-community ul {
   display: -webkit-box;
@@ -71,7 +72,7 @@
 
 .plan-locations {
   background-color: #220303;
-  padding: 50px 0 120px 0;
+  padding: 50px 0 60px 0;
   position: relative;
 }
 .plan-locations a {
@@ -79,9 +80,10 @@
   font-family: "Tulpen One";
   font-weight: 400;
   width: 30%;
-  padding: 7px 14px;
+  padding: 7px 40px;
   text-align: center;
   font-size: 1.8rem;
+  display: inline;
 }
 .plan-locations img {
   width: 100%;
@@ -98,17 +100,14 @@
 }
 .plan-locations .plan-ahead .plan-ahead-image {
   width: 45%;
-  position: absolute;
-  left: 0px;
-  top: -45px;
   -webkit-box-shadow: 25px 25px 0px 0px #FF8327;
           box-shadow: 25px 25px 0px 0px #FF8327;
+  position: absolute;
+  left: 0;
+  top: -27px;
 }
 .plan-locations .plan-ahead .plan-ahead-text {
   width: 40%;
-}
-.plan-locations .plan-ahead .plan-ahead-text p {
-  margin: 3% 0;
 }
 .plan-locations .new-locations {
   display: -webkit-box;
@@ -119,6 +118,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-top: 10%;
 }
 .plan-locations .new-locations .new-locations-image {
   width: 45%;
@@ -130,10 +130,10 @@
 }
 .plan-locations .new-locations .new-locations-text {
   width: 40%;
-  margin-top: 5%;
+  text-align: right;
 }
 .plan-locations .new-locations .new-locations-text p {
-  margin: 3% 0;
+  text-align: left;
 }
 
 .host-a-party {
@@ -455,6 +455,11 @@ html {
   overflow: hidden;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .skip-link {
   position: absolute;
   left: -1000px;
@@ -483,6 +488,8 @@ html {
   font-size: 125%;
   color: #FFFFFF;
   font-family: "Chathura";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 nav {
@@ -495,6 +502,7 @@ nav {
 
 h1 {
   font-family: "Tulpen One";
+  font-weight: 400;
 }
 
 a {
@@ -533,23 +541,33 @@ nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 20px;
   color: #FFFFFF;
+  font-weight: 400;
 }
 nav ul li {
-  margin: 0 2%;
+  padding: 0 25px;
 }
 nav ul li:nth-child(1) {
-  padding-top: 48px;
+  padding-top: 50px;
 }
 nav ul li:nth-child(2) {
-  padding-top: 48px;
+  padding-top: 50px;
 }
 nav ul li:nth-child(4) {
-  padding-top: 48px;
+  padding-top: 50px;
 }
 nav ul li:nth-child(5) {
-  padding-top: 48px;
+  padding-top: 50px;
+}
+nav ul li:nth-child(3) {
+  padding: 0 35px;
+}
+nav ul a {
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+nav ul a:hover, nav ul a:focus {
+  color: #FF8327;
 }
 
 footer {
@@ -562,8 +580,95 @@ footer p {
   margin: 0;
 }
 
-label {
-  visibility: hidden;
+form {
+  background-color: #220303;
+  width: 60%;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 30px 30px 0px -10px #FF8327;
+          box-shadow: 30px 30px 0px -10px #FF8327;
+}
+form input[type=text], form input[type=email] {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  outline: none;
+  background-color: #220303;
+  width: calc(50% - 10px);
+}
+form input[type=text]::-webkit-input-placeholder, form input[type=email]::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+}
+form input[type=text]::-moz-placeholder, form input[type=email]::-moz-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+}
+form input[type=text]:-ms-input-placeholder, form input[type=email]:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+}
+form input[type=text]::-ms-input-placeholder, form input[type=email]::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+}
+form input[type=text]::placeholder, form input[type=email]::placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+}
+form input[type=textarea] {
+  width: 100%;
+  height: 250px;
+  outline: none;
+  background-color: #220303;
+  margin-top: 5%;
+}
+form input[type=textarea]::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+  margin-top: 20%;
+}
+form input[type=textarea]::-moz-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+  margin-top: 20%;
+}
+form input[type=textarea]:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+  margin-top: 20%;
+}
+form input[type=textarea]::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+  margin-top: 20%;
+}
+form input[type=textarea]::placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+  margin-top: 20%;
+}
+form button {
+  background-color: #BF2603;
+  color: #FFFFFF;
+  font-family: "Tulpen One";
+  font-weight: 400;
+  width: 100%;
+  padding: 3px 14px;
+  text-align: center;
+  font-size: 1.8rem;
+  border: none;
+  margin-top: 2%;
+}
+form label {
+  display: inline-block;
 }
 
 .contact-header {
@@ -583,7 +688,7 @@ label {
 
 .contact {
   background-color: #111010;
-  padding: 100px 0 100px 0;
+  padding: 100px 0 200px 0;
 }
 .contact .contact-info {
   display: -webkit-box;
@@ -604,7 +709,7 @@ label {
   width: 30%;
 }
 .contact .address-contact {
-  font-size: 1.95rem;
+  font-size: 1rem;
 }
 .contact .address-contact li {
   line-height: 30px;
@@ -622,88 +727,16 @@ label {
       flex-basis: 10%;
 }
 .contact form {
-  background-color: #220303;
-  width: 60%;
-  color: #FFFFFF;
-  border: 40px solid #220303;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: absolute;
-  top: 20px;
+  top: 300px;
+  right: 100px;
+  padding: 40px 50px;
 }
-.contact form input[type=text], .contact form input[type=email] {
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  outline: none;
-  background-color: #220303;
+.contact form label {
   width: calc(50% - 10px);
 }
-.contact form input[type=text]::-webkit-input-placeholder, .contact form input[type=email]::-webkit-input-placeholder {
-  color: #FFFFFF;
-  font-family: "Chathura";
-}
-.contact form input[type=text]::-moz-placeholder, .contact form input[type=email]::-moz-placeholder {
-  color: #FFFFFF;
-  font-family: "Chathura";
-}
-.contact form input[type=text]:-ms-input-placeholder, .contact form input[type=email]:-ms-input-placeholder {
-  color: #FFFFFF;
-  font-family: "Chathura";
-}
-.contact form input[type=text]::-ms-input-placeholder, .contact form input[type=email]::-ms-input-placeholder {
-  color: #FFFFFF;
-  font-family: "Chathura";
-}
-.contact form input[type=text]::placeholder, .contact form input[type=email]::placeholder {
-  color: #FFFFFF;
-  font-family: "Chathura";
-}
-.contact form input[type=textarea] {
-  width: 100%;
-  height: 250px;
-  outline: none;
-  background-color: #220303;
-  margin-top: 5%;
-}
-.contact form input[type=textarea]::-webkit-input-placeholder {
-  color: #FFFFFF;
-  font-family: "Chathura";
-}
-.contact form input[type=textarea]::-moz-placeholder {
-  color: #FFFFFF;
-  font-family: "Chathura";
-}
-.contact form input[type=textarea]:-ms-input-placeholder {
-  color: #FFFFFF;
-  font-family: "Chathura";
-}
-.contact form input[type=textarea]::-ms-input-placeholder {
-  color: #FFFFFF;
-  font-family: "Chathura";
-}
-.contact form input[type=textarea]::placeholder {
-  color: #FFFFFF;
-  font-family: "Chathura";
-}
-.contact form button {
-  background-color: #BF2603;
-  color: #FFFFFF;
-  font-family: "Tulpen One";
-  font-weight: 400;
-  width: 100%;
-  padding: 3px 14px;
-  text-align: center;
-  font-size: 1.8rem;
-  border: none;
-  margin-top: 2%;
-}
-.contact label {
+.contact form .message-label {
   position: absolute;
+  left: 23px;
+  top: 110px;
 }
