@@ -11,8 +11,6 @@
     align-items:center;
    
 
-
-
 // H2 in header style with span 'Place to be"
     h2{
         color:$tertiary;
@@ -48,25 +46,100 @@
             right: 0;
             top: 300px;
         }
-    }
+}
 
+
+// Space-Communtity section - First section in Main
 
 .space-community{
-    background-color: $quaternary;
-    position:relative;
-    z-index:-20;
-    padding:120px 0 80px 0;
+    background-color:$quaternary;
+    padding:150px 0 60px 40px;
 
+
+    // Flex ul 
     ul{
         display:flex;
         flex-wrap:wrap;
+        justify-content: space-between;
 
+        // Give each list item a width
         li{
-            flex-basis: calc(100% / 2) - 2%;
-         
+            flex-basis:calc((100% / 2) - 45px);
+            position:relative;
         }
+        
+        // Add a pseudo element before each list item
+        .new-space-icon::before{
+            position: absolute;
+            left: -62px;
+            width: 45px;
+            height: 45px;
+            background: darkred;
+            color: #fff;
+            text-align: center;
+            line-height: 41px;
+            border-radius: 50%;
+            top: 5px;
+            font-family:"Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f007";
+            font-size: 26px;
+        }  
+        .community-icon::before{
+            position: absolute;
+            left: -62px;
+            width: 45px;
+            height: 45px;
+            background: darkred;
+            color: #fff;
+            text-align: center;
+            line-height: 46px;
+            border-radius: 50%;
+            top: 5px;
+            font-family:"Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f0c0";
+            font-size: 26px;
+        } 
+        .blog-icon::before{
+            position: absolute;
+            left: -62px;
+            width: 45px;
+            height: 45px;
+            background: darkred;
+            color: #fff;
+            text-align: center;
+            line-height: 45px;
+            border-radius: 50%;
+            top: 5px;
+            font-family:"Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f249";
+            font-size: 26px;
+        } 
+        .get-in-touch-icon::before{
+            position: absolute;
+            left: -62px;
+            width: 45px;
+            height: 45px;
+            background: darkred;
+            color: #fff;
+            text-align: center;
+            line-height: 43px;
+            border-radius: 50%;
+            top: 5px;
+            font-family:"Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f879";
+            font-size: 26px;
+        } 
+    
+    // Adjust margin on paragraphs
+    p{
+        margin-top:0;
     }
-  
+    }
+    
 }
 
 .plan-locations{

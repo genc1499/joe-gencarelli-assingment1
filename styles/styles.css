@@ -54,9 +54,7 @@
 
 .space-community {
   background-color: #111010;
-  position: relative;
-  z-index: -20;
-  padding: 120px 0 80px 0;
+  padding: 150px 0 60px 40px;
 }
 .space-community ul {
   display: -webkit-box;
@@ -64,10 +62,81 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .space-community ul li {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+  -ms-flex-preferred-size: calc(50% - 45px);
+      flex-basis: calc(50% - 45px);
+  position: relative;
+}
+.space-community ul .new-space-icon::before {
+  position: absolute;
+  left: -62px;
+  width: 45px;
+  height: 45px;
+  background: darkred;
+  color: #fff;
+  text-align: center;
+  line-height: 41px;
+  border-radius: 50%;
+  top: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
+  font-size: 26px;
+}
+.space-community ul .community-icon::before {
+  position: absolute;
+  left: -62px;
+  width: 45px;
+  height: 45px;
+  background: darkred;
+  color: #fff;
+  text-align: center;
+  line-height: 46px;
+  border-radius: 50%;
+  top: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0c0";
+  font-size: 26px;
+}
+.space-community ul .blog-icon::before {
+  position: absolute;
+  left: -62px;
+  width: 45px;
+  height: 45px;
+  background: darkred;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  top: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f249";
+  font-size: 26px;
+}
+.space-community ul .get-in-touch-icon::before {
+  position: absolute;
+  left: -62px;
+  width: 45px;
+  height: 45px;
+  background: darkred;
+  color: #fff;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 50%;
+  top: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f879";
+  font-size: 26px;
+}
+.space-community ul p {
+  margin-top: 0;
 }
 
 .plan-locations {
@@ -739,4 +808,68 @@ form label {
   position: absolute;
   left: 23px;
   top: 110px;
+}
+
+.blog-post-text {
+  background-color: #111010;
+  position: relative;
+  padding: 60px 0 60px 0;
+}
+.blog-post-text .mission-image {
+  width: 25%;
+}
+.blog-post-text .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog-post-text aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+.blog-post-text aside h3 {
+  font-size: 1.95rem;
+}
+.blog-post-text aside p {
+  font-size: 1rem;
+  line-height: 15px;
+}
+.blog-post-text aside ul {
+  list-style: circle;
+}
+.blog-post-text aside ul li {
+  line-height: 15px;
+}
+.blog-post-text .new-menu-image {
+  position: absolute;
+  right: 0;
+  top: -130px;
+  width: 60%;
+}
+.blog-post-text article {
+  border-left: 4px solid #FF8327;
+}
+.blog-post-text article::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid #FF8327;
+}
+.blog-post-text .new-menu-blog-post {
+  width: 80%;
+}
+.blog-post-text .new-menu-blog-post h3 {
+  font-size: 1.95rem;
+}
+.blog-post-text .new-menu-blog-post p {
+  font-size: 1rem;
+  line-height: 15px;
 }
