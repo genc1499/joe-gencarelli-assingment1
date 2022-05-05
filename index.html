@@ -12,35 +12,51 @@
     <link rel="stylesheet" href="./styles/styles.css">
     
 </head>
+<style>
+    @media screen and (max-width:600px){
+      .main-menu-item{
+          visibility:hidden;
+          
+      }
+
+      
+
+      .menu-button{
+          visibility: visible;
+          right:0;
+      }
+      header{
+          justify-content: flex-start;
+      }
+    }
+</style>
 <body>
     <!-- Anchor tag to skip to main content-->
     <a href="#home-main" class="skip-link">Skip to main content.</a>
     <header class="main-page-header">
     <!-- Hero image displayed in header -->
-    
+        
         <nav>
+       <button><span class="fa-solid fa-bars"></span></button>
             <ul>
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
+                
+                <li class="main-nav-menu-item"><a href="./index.html">HOME</a></li>
+                <li class="main-nav-menu-item"><a href="#">ABOUT</a></li>
                 <li><a href=""></a><h1>Bar-One</h1></li>
-                <li><a href="./blog.html">BLOG</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
+                <li class="main-nav-menu-item"><a href="./blog.html">BLOG</a></li>
+                <li class="main-nav-menu-item"><a href="./contact.html">CONTACT</a></li>
+                
             </ul>
         </nav>
         <div class="header-flex">
-        <div class="header-h2">
-            <h2>Bar-One <span>Place to be</span></h2> 
-        </div>
-<style>
-  
-
-       
-    
-</style>
-        <div class="offset-header-image">
-            <img src="./assets/header-box.jpg" alt="Black and white image of a wine glass hanger filled with wine glasses">
-        </div>
-    </div> 
+            <div class="header-h2">
+                <h2>Bar-One <span>Place to be</span></h2> 
+            </div>
+   
+            <div class="offset-header-image">
+                <img src="./assets/header-box.jpg" alt="Black and white image of a wine glass hanger filled with wine glasses">
+            </div>
+        </div> 
     </header>
 
     <main id="home-main">
@@ -72,7 +88,7 @@
         <section class="plan-locations">
             <div class="wrapper"> 
                 <div class="plan-ahead">
-                    <div class="plan-ahead-image">
+                    <div class="plan-ahead-image wrapper-two">
                         <img src="./assets/left-image.jpg" alt="Angles view of chicly lit bar">    
                     </div>
 

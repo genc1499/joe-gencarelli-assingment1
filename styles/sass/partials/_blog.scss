@@ -4,67 +4,124 @@
 .blog-post-text{
     background-color:$quaternary;
     position:relative;
+    .wrapper{
+        width:90%;
+        max-width:1200px;
+        margin:0 auto;
+    }
 
     // Add some padding to creat space
     padding:60px 0 60px 0;
-
-    // Re-size imgae
-    .mission-image{
-        width:25%;
-    }
-    .wrapper{
-        display:flex;
-    
-    }
-
-    // Flex the aside container
-    // Display as coloumn 
-    aside{
-        display:flex;
-        flex-direction:column;
-        justify-content: space-between;
-        width:50%;
-        // Give both mission section and recent posts a width of 25%
-        // Style colour and padding
-        // Re-size all elements in these containers
-        // &>*{
-        //     width:25%;
-        //     background-color: $quinary;
-        //     padding:20px
-        // }
-        h3{
-            font-size:1.95rem;
-        }
-        p{
-            font-size:1rem;
-            line-height:15px;
-        }
-        ul{
-            list-style:circle;
-            li{
-                line-height:15px;
-            }
-        }
-    }
 
     .new-menu-image{
         position:absolute;
         right:0;
         top:-130px;
-        width:60%;
+        width:63%;
     }
-    article{
-        border-left:4px solid $tertiary;
-        
-        &::after{
-            content:"";
-            display:block;
-            border-bottom: 5px solid $tertiary;
+
+    // Re-size imgae
+    .mission-image{
+        width:25%;
+        margin-top:5%;
+        img{
+            box-shadow:41px 4px 0px -5px $quinary;
         }
+      
+    }
+    // Flex container container containing mission and recent posts
+    .mission{
+        display:flex;
+        flex-direction:column; 
+        width:50%;
+    }
+  
+    
+    aside{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        width:75%;
+        background-color:$quinary;
+        padding: 0px 19px 13px 21px;
+    
+        h3{
+            font-size:1.95rem;
+            margin-bottom:0;
+        }
+        p{
+            font-size:1rem;
+            line-height:15px;
+            margin:-10px 0 0 0;
+        }
+        .mission-text a{
+            color:$tertiary;
+        }
+        li{
+                line-height:15px;
+                margin-left:20px;
+                position:relative;
+                font-size:1rem;
+                line-height:15px;
+                letter-spacing: 1.9px;
+                font-family:$bodyFont;
+               
+
+                &::before{
+                    content:"•";
+                    position: absolute;
+                    color: $secondary;
+                    font-size: 4rem;
+                    left: -20px;
+                    display:inline-block;
+
+                
+                }
+            }
+        }
+    
+    .blog-container{
+        display:flex;
+    }
+    
+    article{
+        padding:39px 1px 41px 73px;
+        // border-left:5px solid orange;
+        position:relative;
+        border-left:5px solid orange;
+        margin-left:12%;
+
+        .blog-date{
+            margin-top:0;
+            color:$tertiary;
+        }
+
+        
+            
+        
+        // &::before{
+        //     content:'';
+        //     position:absolute;
+        //     border-left:5px solid orange;
+        //     height: 494px;
+        //     top: -15px;
+        //     left: 94px;
+        // }
+        &::after{
+            content:'';
+            position:absolute;
+            border-bottom:5px solid orange;
+            bottom: 0px;
+            width: 100%;
+            left: 94px;;
+        }
+        
+        
+    
     }
     // Re-size elements in blog post
     .new-menu-blog-post{
-        width:80%;
+        
        
         h3{
             font-size:1.95rem;

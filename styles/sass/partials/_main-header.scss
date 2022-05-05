@@ -1,3 +1,6 @@
+// Main Page
+
+// Header styles
 .main-page-header{
     background-image:url('../assets/home-image-1.jpg');
     background-repeat:no-repeat;
@@ -23,7 +26,8 @@
         position:relative;
         letter-spacing:2.4px;
         font-weight:400;
-    
+        
+        
         span{
             display: block;
             color:$primary;
@@ -32,7 +36,7 @@
             line-height:94.7px;
             letter-spacing:2.6px;
             font-size:4.16rem;
-            margin-right: 38%;
+            margin-right: 36%;
             margin-top: -20%;
         }   
     }
@@ -68,7 +72,7 @@
             position:relative;
         }
         
-        // Add a pseudo element before each list item
+        // Add a pseudo element before each list item - the 'icons'
         .new-space-icon::before{
             position: absolute;
             left: -62px;
@@ -134,19 +138,20 @@
             font-size: 26px;
         } 
     
-    // Adjust margin on paragraphs
-    p{
-        margin-top:0;
-    }
+        // Adjust margin on paragraphs
+        p{
+            margin-top:0;
+        }
     }
     
-}
+} //End of first section styles
 
+// Plan Locations section - ssecond section in main
 .plan-locations{
     background-color:$quinary;
-    padding:50px 0 60px 0;
-    position: relative;
-   
+    padding:50px 0 15px 0;
+    
+    //Style all anchor tags in section
     a{
         background-color: $secondary;
         font-family:$barOne;
@@ -158,67 +163,81 @@
         display:inline;
         }
     
-    img{
-        width:100%
-    }
-
+    // img{
+    //     width:100%
+    // }
+    // Flex ul image and text are in
     .plan-ahead{
         display:flex;
         flex-wrap:wrap;
+        position:relative;
         justify-content:flex-end;
-        
-
-      .plan-ahead-image{ 
-          width:45%;    
-          box-shadow: 25px 25px 0px 0px $tertiary; 
+       
+       //Position image to overlap with previous section    
+        .plan-ahead-image{ 
+          width:50%;   
           position:absolute;
-          left:0;
-          top:-27px;  
-        }
+          left: -140px;
+          top: -76px;
+      
 
+        //Add box shawdow 
+            img{
+                box-shadow: 25px 25px 0px 0px $tertiary; 
+            }
+        } 
+        
+        // Ajust width of text area 
+        // Remove margin from paragraph
         .plan-ahead-text{
-        width:40%;
+            width:40%;
+            p{
+                margin-top:0;
+            }
         }
         
-     
-    
     }
+
+    // Flex container that image and text are in
     .new-locations{
         display:flex;
         flex-wrap:wrap;
+        margin-top: 8%;
+        position:relative;
         justify-content:flex-start;
-        margin-top:10%;
-        
 
-      .new-locations-image{ 
-          width:45%;
-            position:absolute;
-        right:0px;
-            bottom:-45px;    
-          box-shadow: -25px -25px 0px 0px $tertiary; 
-
-           
+        //Position image to overlap with previous section 
+        .new-locations-image{ 
+            width:50%;
+            position:absolute;;
+            right: -145px;
+            bottom: -57px;
+            img{
+                box-shadow: -25px -25px 0px 0px $tertiary; 
+            }       
         }
 
+        // Adjust width of text section and remove margin from paragraph
         .new-locations-text{
-        width:40%;
-        text-align:right;
+            width:40%;
+            text-align:right;
 
-        p{
-            text-align:left;
+            p{
+                margin-top:0;
+                text-align:left;
+            }
         }
-    }
         
      
-}
-}
+    }
+} //End of section section styles
 
 // Host a party section
 .host-a-party{
     background-color:$quaternary;
     padding:120px 0 120px 0;
 
-    // Change color on h3
+    // Change color on h3 and center
     h3{
         color:$tertiary;
         text-align:center;
@@ -257,13 +276,13 @@
     }
     .events-image{
         width:50%;
-        box-shadow:25px 25px 0 0 $tertiary;
-       
+
         img{
             width:100%;
-           
+            box-shadow:25px 25px 0 0 $tertiary;
         }
     }
+
     .events-text{
         width: auto;
         margin-left: 6%;
@@ -290,7 +309,6 @@
     padding:50px 0 50px 0;
     
     ul{
-        
         display:flex;
         flex-wrap:wrap;
         justify-content:space-between;

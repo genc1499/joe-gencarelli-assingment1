@@ -22,7 +22,7 @@
 .contact{
     background-color:$quaternary;
     padding:100px 0 200px 0;
-
+    
 
     // Flex container so contact info and form are side-by-side
     .contact-info{
@@ -47,7 +47,7 @@
         }
     }
     
-    // Align socila media icons so they sit beside eachother
+    // Align social media icons so they sit beside eachother
    
     .social-media{
         display:flex; 
@@ -60,10 +60,8 @@
 
     // Form styling
     form{
-        position:absolute;
-        top:300px;
-        right:100px;
         padding:40px 50px;
+        margin-top:-15%;
         label{
             width:calc((100% / 2) - 10px);
         }
@@ -75,11 +73,5 @@
         }
     }
         
-    
-    
-           
-
-
-
 }
 
