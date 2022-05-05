@@ -18,6 +18,9 @@
         right:0;
         top:-130px;
         width:63%;
+        img{
+        box-shadow:-13px 19px 0px -2px $tertiary;
+        }
     }
 
     // Re-size imgae
@@ -50,8 +53,8 @@
             margin-bottom:0;
         }
         p{
-            font-size:1rem;
-            line-height:15px;
+            font-size:1.4rem;
+            line-height:19px;
             margin:-10px 0 0 0;
         }
         .mission-text a{
@@ -61,8 +64,8 @@
                 line-height:15px;
                 margin-left:20px;
                 position:relative;
-                font-size:1rem;
-                line-height:15px;
+                font-size:1.4rem;
+                line-height:19px;
                 letter-spacing: 1.9px;
                 font-family:$bodyFont;
                
@@ -85,14 +88,14 @@
     }
     
     article{
-        padding:39px 1px 41px 73px;
+        padding:3px 1px 41px 73px;
         // border-left:5px solid orange;
         position:relative;
         border-left:5px solid orange;
         margin-left:12%;
 
         .blog-date{
-            margin-top:0;
+            margin-top:-10px;
             color:$tertiary;
         }
 
@@ -112,8 +115,8 @@
             position:absolute;
             border-bottom:5px solid orange;
             bottom: 0px;
-            width: 100%;
-            left: 94px;;
+            width: 109%;
+            left: 0px;
         }
         
         
@@ -127,8 +130,8 @@
             font-size:1.95rem;
         }
         p{
-            font-size:1rem;
-            line-height:15px;
+            font-size:1.4rem;
+            line-height:19px;
         }
 
  
@@ -136,4 +139,50 @@
 
 
     
+}
+
+// Comments Section
+.comments-container{
+    background-color:$quaternary;
+
+    h4{
+        align-self:center;
+       margin-right:10%;
+        font-size:1.6rem;
+    }
+
+    p{
+        font-size:1.4rem;
+        line-height:19px;
+        margin:0 0 0 0;
+    }
+    .commnet-date{
+        color:$tertiary;
+        margin-bottom:10px;
+    }
+
+ 
+
+    .comments{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-end;
+        margin-top:-53px;
+
+        .comment-text{
+            width:80%;
+            margin-left:50px;
+            align-self: flex-end;
+        }
+        
+    
+}
+    .top-comment{
+        margin-bottom:100px;
+    }
+    .top-comment, .second-comment{
+        display:flex;
+        width:60%;
+    }
+
 }
