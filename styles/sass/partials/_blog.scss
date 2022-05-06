@@ -3,6 +3,7 @@
 // Add backlground-color
 .blog-post-text{
     background-color:$quaternary;
+    padding:60px 0 60px 0;
     position:relative;
     .wrapper{
         width:90%;
@@ -10,28 +11,26 @@
         margin:0 auto;
     }
 
-    // Add some padding to creat space
-    padding:60px 0 60px 0;
-
+    // Image the overlaps into header
     .new-menu-image{
         position:absolute;
         right:0;
         top:-130px;
         width:63%;
         img{
-        box-shadow:-13px 19px 0px -2px $tertiary;
+            box-shadow:-13px 19px 0px -2px $tertiary;
         }
     }
 
-    // Re-size imgae
+    // Re-size imgage
     .mission-image{
         width:25%;
         margin-top:5%;
         img{
-            box-shadow:41px 4px 0px -5px $quinary;
+            box-shadow:38px 4px 0px -5px $quinary;
         }
-      
     }
+    
     // Flex container container containing mission and recent posts
     .mission{
         display:flex;
@@ -39,19 +38,21 @@
         width:50%;
     }
   
-    
+    // Aside styles
     aside{
         display:flex;
         flex-direction:column;
         justify-content: space-between;
-        width:75%;
+        width:65%;
         background-color:$quinary;
         padding: 0px 19px 13px 21px;
+        margin-top:-9px;
     
         h3{
             font-size:1.95rem;
             margin-bottom:0;
         }
+
         p{
             font-size:1.4rem;
             line-height:19px;
@@ -61,27 +62,25 @@
             color:$tertiary;
         }
         li{
-                line-height:15px;
-                margin-left:20px;
-                position:relative;
-                font-size:1.4rem;
-                line-height:19px;
-                letter-spacing: 1.9px;
-                font-family:$bodyFont;
+            line-height:15px;
+            margin-left:20px;
+            position:relative;
+            font-size:1.4rem;
+            line-height:19px;
+            letter-spacing: 1.9px;
+            font-family:$bodyFont;
                
-
-                &::before{
-                    content:"•";
-                    position: absolute;
-                    color: $secondary;
-                    font-size: 4rem;
-                    left: -20px;
-                    display:inline-block;
-
-                
-                }
+            // Add coloured bullets to each list item
+            &::before{
+                content:"•";
+                position: absolute;
+                color: $secondary;
+                font-size: 4rem;
+                left: -20px;
+                display:inline-block;
             }
         }
+    }
     
     .blog-container{
         display:flex;
@@ -89,9 +88,8 @@
     
     article{
         padding:3px 1px 41px 73px;
-        // border-left:5px solid orange;
         position:relative;
-        border-left:5px solid orange;
+        border-left:5px solid $tertiary;
         margin-left:12%;
 
         .blog-date{
@@ -99,55 +97,51 @@
             color:$tertiary;
         }
 
-        
-            
-        
-        // &::before{
-        //     content:'';
-        //     position:absolute;
-        //     border-left:5px solid orange;
-        //     height: 494px;
-        //     top: -15px;
-        //     left: 94px;
-        // }
+        // Add top and bottom horizontal border that extends outside wrapper contraints
+
+        &::before{
+            content:'';
+            position:absolute;
+            border-top:5px solid $tertiary;
+            top: 0px;
+            width: 115%;
+            left: 0px;
+        }
+
         &::after{
             content:'';
             position:absolute;
-            border-bottom:5px solid orange;
+            border-bottom:5px solid $tertiary;
             bottom: 0px;
-            width: 109%;
-            left: 0px;
+            width: 115%;
+            left: 0px; 
         }
         
-        
-    
     }
     // Re-size elements in blog post
     .new-menu-blog-post{
-        
-       
         h3{
             font-size:1.95rem;
         }
+
         p{
             font-size:1.4rem;
             line-height:19px;
         }
 
  
-    }
-
-
-    
+    }   
 }
 
 // Comments Section
 .comments-container{
     background-color:$quaternary;
+    padding-bottom:25px;
 
+    // Align h2 to be flush with each comment section
     h4{
         align-self:center;
-       margin-right:10%;
+        margin-right:10%;
         font-size:1.6rem;
     }
 
@@ -156,13 +150,14 @@
         line-height:19px;
         margin:0 0 0 0;
     }
+
+    // Style the dates of each comment
     .commnet-date{
         color:$tertiary;
         margin-bottom:10px;
     }
 
- 
-
+    // Flex so each comment and the form are stacked on top of eachother
     .comments{
         display:flex;
         flex-direction:column;
@@ -172,17 +167,43 @@
         .comment-text{
             width:80%;
             margin-left:50px;
-            align-self: flex-end;
         }
         
-    
-}
-    .top-comment{
-        margin-bottom:100px;
-    }
-    .top-comment, .second-comment{
-        display:flex;
-        width:60%;
-    }
+         // Add some apce between each comment section
+        .top-comment{
+            margin-bottom:100px;
+        }
 
+        // Flex each comment container so image and text are-side-by side
+        .top-comment, .second-comment{
+            display:flex;
+            width:60%;
+        }
+
+        // Adjusted Form Stylings
+        // Remove box shadow and increase width
+        form{
+            box-shadow:none;
+            width:65%;
+            padding-left:70px;
+            padding-right:0px;   
+        }
+       
+
+        // Change background color from inputs and form
+        // Add border-bottom to input fields
+        form{
+            background-color: revert;
+            input{
+                background-color: $quaternary;
+                border-bottom:2px solid $tertiary;
+            }
+            textarea{
+                background-color:$quaternary;
+                border:2px solid $tertiary;
+            }
+        }
+     
+    }
 }
+

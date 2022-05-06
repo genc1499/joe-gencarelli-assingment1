@@ -1,8 +1,10 @@
-
+// Import all SCSS partials 
 
 @import "./partials/variables.scss";
 @import "./partials/main-header.scss";
 @import "./partials/setup.scss";
 @import "./partials/typography.scss";
+@import "./partials/general-styles.scss";
 @import "./partials/contact-page.scss";
 @import "./partials/blog.scss";
+@import "./partials/media-queries.scss";

@@ -45,17 +45,18 @@
   margin-top: -20%;
 }
 .main-page-header .header-flex {
-  margin-top: 15%;
+  margin-top: 20%;
 }
 .main-page-header .offset-header-image {
   position: absolute;
   right: 0;
-  top: 300px;
+  top: 370px;
+  width: 50%;
 }
 
 .space-community {
   background-color: #111010;
-  padding: 150px 0 60px 40px;
+  padding: 150px 0 80px 40px;
 }
 .space-community ul {
   display: -webkit-box;
@@ -142,7 +143,7 @@
 
 .plan-locations {
   background-color: #220303;
-  padding: 50px 0 15px 0;
+  padding: 70px 0 80px 0;
 }
 .plan-locations a {
   background-color: #BF2603;
@@ -169,7 +170,7 @@
   width: 50%;
   position: absolute;
   left: -140px;
-  top: -76px;
+  top: -97px;
 }
 .plan-locations .plan-ahead .plan-ahead-image img {
   -webkit-box-shadow: 25px 25px 0px 0px #FF8327;
@@ -197,7 +198,7 @@
   width: 50%;
   position: absolute;
   right: -145px;
-  bottom: -57px;
+  bottom: -132px;
 }
 .plan-locations .new-locations .new-locations-image img {
   -webkit-box-shadow: -25px -25px 0px 0px #FF8327;
@@ -255,15 +256,18 @@
 }
 .events .events-image img {
   width: 100%;
-  -webkit-box-shadow: 25px 25px 0 0 #FF8327;
-          box-shadow: 25px 25px 0 0 #FF8327;
+  -webkit-box-shadow: 20px 18px 0 0 #FF8327;
+          box-shadow: 20px 18px 0 0 #FF8327;
 }
 .events .events-text {
   width: auto;
-  margin-left: 6%;
+  margin-left: 10%;
 }
 .events .events-text h3 {
   color: #FF8327;
+}
+.events .events-text p {
+  margin-top: 2px;
 }
 .events .events-text a {
   background-color: #BF2603;
@@ -549,17 +553,6 @@ html {
   left: 0;
 }
 
-img {
-  display: inline-block;
-  max-width: 100%;
-}
-
-.wrapper {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 html {
   font-size: 125%;
   color: #FFFFFF;
@@ -579,6 +572,7 @@ nav {
 h1 {
   font-family: "Tulpen One";
   font-weight: 400;
+  margin: 18px 10px;
 }
 
 a {
@@ -610,6 +604,17 @@ p {
   letter-spacing: 1.9px;
 }
 
+.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -621,10 +626,10 @@ nav ul {
   font-weight: 400;
 }
 nav ul li {
-  padding: 0 25px;
+  padding: 0 30px;
 }
 nav ul .main-nav-menu-item {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 nav ul a {
   -webkit-transition: 0.3s ease-in;
@@ -634,20 +639,11 @@ nav ul a:hover, nav ul a:focus {
   color: #FF8327;
 }
 
-footer {
-  text-align: center;
-  background-color: grey;
-  padding: 5px;
-  font-family: "Tulpen One";
-}
-footer p {
-  margin: 0;
-}
-
 form {
   background-color: #220303;
   width: 60%;
   color: #FFFFFF;
+  padding: 40px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,6 +654,7 @@ form {
           justify-content: space-between;
   -webkit-box-shadow: 30px 30px 0px -10px #FF8327;
           box-shadow: 30px 30px 0px -10px #FF8327;
+  position: relative;
 }
 form input[type=text], form input[type=email] {
   border-top-style: hidden;
@@ -666,6 +663,77 @@ form input[type=text], form input[type=email] {
   outline: none;
   background-color: #220303;
   width: calc(50% - 10px);
+  color: #FFFFFF;
+  padding-bottom: 25px;
+  padding: 0 0 25px 20px;
+}
+form input[type=text]::-webkit-input-placeholder, form input[type=email]::-webkit-input-placeholder {
+  font-family: "Chathura";
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+form input[type=text]::-moz-placeholder, form input[type=email]::-moz-placeholder {
+  font-family: "Chathura";
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+form input[type=text]:-ms-input-placeholder, form input[type=email]:-ms-input-placeholder {
+  font-family: "Chathura";
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+form input[type=text]::-ms-input-placeholder, form input[type=email]::-ms-input-placeholder {
+  font-family: "Chathura";
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+form input[type=text]::placeholder, form input[type=email]::placeholder {
+  font-family: "Chathura";
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+form textarea {
+  width: 100%;
+  height: 225px;
+  margin: 33px 0;
+  background-color: #220303;
+  outline: none;
+  padding: 30px 0 0 20px;
+}
+form textarea::-webkit-input-placeholder {
+  font-family: "Chathura";
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+form textarea::-moz-placeholder {
+  font-family: "Chathura";
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+form textarea:-ms-input-placeholder {
+  font-family: "Chathura";
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+form textarea::-ms-input-placeholder {
+  font-family: "Chathura";
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+form textarea::placeholder {
+  font-family: "Chathura";
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
 }
 form button {
   background-color: #BF2603;
@@ -673,14 +741,27 @@ form button {
   font-family: "Tulpen One";
   font-weight: 400;
   width: 100%;
-  padding: 3px 14px;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   border: none;
   margin-top: 2%;
+  letter-spacing: 1.3px;
+  height: 33px;
 }
 form label {
-  display: inline-block;
+  opacity: 0;
+  position: absolute;
+  right: 999px;
+}
+
+footer {
+  text-align: center;
+  background-color: #313131;
+  padding: 5px;
+  font-family: "Tulpen One";
+}
+footer p {
+  margin: 0;
 }
 
 .contact-header {
@@ -742,19 +823,11 @@ form label {
   padding: 40px 50px;
   margin-top: -15%;
 }
-.contact form label {
-  width: calc(50% - 10px);
-}
-.contact form .message-label {
-  position: absolute;
-  left: 23px;
-  top: 110px;
-}
 
 .blog-post-text {
   background-color: #111010;
-  position: relative;
   padding: 60px 0 60px 0;
+  position: relative;
 }
 .blog-post-text .wrapper {
   width: 90%;
@@ -776,8 +849,8 @@ form label {
   margin-top: 5%;
 }
 .blog-post-text .mission-image img {
-  -webkit-box-shadow: 41px 4px 0px -5px #220303;
-          box-shadow: 41px 4px 0px -5px #220303;
+  -webkit-box-shadow: 38px 4px 0px -5px #220303;
+          box-shadow: 38px 4px 0px -5px #220303;
 }
 .blog-post-text .mission {
   display: -webkit-box;
@@ -800,9 +873,10 @@ form label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 75%;
+  width: 65%;
   background-color: #220303;
   padding: 0px 19px 13px 21px;
+  margin-top: -9px;
 }
 .blog-post-text aside h3 {
   font-size: 1.95rem;
@@ -841,19 +915,27 @@ form label {
 .blog-post-text article {
   padding: 3px 1px 41px 73px;
   position: relative;
-  border-left: 5px solid orange;
+  border-left: 5px solid #FF8327;
   margin-left: 12%;
 }
 .blog-post-text article .blog-date {
   margin-top: -10px;
   color: #FF8327;
 }
+.blog-post-text article::before {
+  content: "";
+  position: absolute;
+  border-top: 5px solid #FF8327;
+  top: 0px;
+  width: 115%;
+  left: 0px;
+}
 .blog-post-text article::after {
   content: "";
   position: absolute;
-  border-bottom: 5px solid orange;
+  border-bottom: 5px solid #FF8327;
   bottom: 0px;
-  width: 109%;
+  width: 115%;
   left: 0px;
 }
 .blog-post-text .new-menu-blog-post h3 {
@@ -866,6 +948,7 @@ form label {
 
 .comments-container {
   background-color: #111010;
+  padding-bottom: 25px;
 }
 .comments-container h4 {
   -ms-flex-item-align: center;
@@ -898,15 +981,31 @@ form label {
 .comments-container .comments .comment-text {
   width: 80%;
   margin-left: 50px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
-.comments-container .top-comment {
+.comments-container .comments .top-comment {
   margin-bottom: 100px;
 }
-.comments-container .top-comment, .comments-container .second-comment {
+.comments-container .comments .top-comment, .comments-container .comments .second-comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 60%;
+}
+.comments-container .comments form {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 65%;
+  padding-left: 70px;
+  padding-right: 0px;
+}
+.comments-container .comments form {
+  background-color: revert;
+}
+.comments-container .comments form input {
+  background-color: #111010;
+  border-bottom: 2px solid #FF8327;
+}
+.comments-container .comments form textarea {
+  background-color: #111010;
+  border: 2px solid #FF8327;
 }

@@ -1,0 +1,131 @@
+// Styles that will be used for repeating elements in HTML
+// General styles that will apply in all html files
+
+// Wrapper styles
+
+.wrapper{
+    width:80%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+//Image styling
+
+img{
+    display:inline-block;
+    max-width:100%;
+}
+
+// Navigation menu for each page's header
+
+nav ul{
+    display:flex;
+    justify-content: center;
+    color:$primary;
+    font-weight:400;
+
+    li{
+       padding:0 30px;
+        
+     }
+     .main-nav-menu-item{
+        padding-top:20px;
+     }
+   
+    // Transition properties for hover/focus
+    a{
+        transition:.3s ease-in;
+    }
+
+    // Create hover/focus state for nav items
+    a:hover, a:focus{
+        color:$tertiary;
+    }
+}
+
+
+// Form styling
+
+form{
+    background-color: $quinary;
+    width:60%;
+    color:$primary;
+    padding:40px 50px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    box-shadow: 30px 30px 0px -10px #FF8327;
+    position:relative;
+    
+
+    // Input field styling
+    input[type=text], input[type=email]{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    outline:none;
+    background-color:$quinary;
+    width:calc((100% / 2) - 10px);
+    color:$primary;
+    padding-bottom:25px;
+    padding:0 0 25px 20px;
+        // Style placeholder text
+        &::placeholder{
+            font-family: $bodyFont;
+            font-size:1.5rem;
+            color:$primary;
+            font-weight:700;
+        }
+    }
+
+    textarea{
+        width: 100%;
+        height: 225px;
+        margin: 33px 0;
+        background-color:$quinary;
+        outline:none;
+        padding:30px 0 0 20px;
+        // Style placeholder text
+        &::placeholder{
+            font-family: $bodyFont;
+            font-size:1.5rem;
+            color:$primary;
+            font-weight:700;
+        }
+    }
+
+
+    // Button styles
+    button{
+    background-color: $secondary;
+    color:$primary;
+    font-family:$barOne;
+    font-weight:400;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    border:none;
+    margin-top:2%;
+    letter-spacing:1.3px;
+    height:33px;
+    }
+
+    // Hide labels
+    label{
+        opacity:0;
+        position:absolute;
+        right:999px;
+    }
+    
+}
+
+// Footer styles  
+footer{
+    text-align:center;
+    background-color:#313131;
+    padding:5px;
+    font-family:$barOne;
+    p{
+        margin:0;
+    }
+}

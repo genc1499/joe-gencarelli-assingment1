@@ -48,7 +48,6 @@
     }
     
     // Align social media icons so they sit beside eachother
-   
     .social-media{
         display:flex; 
          // Add space between each icon
@@ -58,19 +57,10 @@
         
     }
 
-    // Form styling
+    // Adjusted Form styling
     form{
         padding:40px 50px;
         margin-top:-15%;
-        label{
-            width:calc((100% / 2) - 10px);
-        }
-
-       .message-label{
-            position:absolute;
-            left: 23px;
-            top: 110px;  
-        }
     }
         
 }

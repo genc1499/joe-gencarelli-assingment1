@@ -42,13 +42,14 @@
     }
 
     .header-flex{
-        margin-top:15%
+        margin-top:20%
         // Position second image absolute 
     }
         .offset-header-image{
             position: absolute;
             right: 0;
-            top: 300px;
+            top: 370px;
+            width:50%;
         }
 }
 
@@ -57,7 +58,7 @@
 
 .space-community{
     background-color:$quaternary;
-    padding:150px 0 60px 40px;
+    padding:150px 0 80px 40px;
 
 
     // Flex ul 
@@ -149,7 +150,7 @@
 // Plan Locations section - ssecond section in main
 .plan-locations{
     background-color:$quinary;
-    padding:50px 0 15px 0;
+    padding:70px 0 80px 0;
     
     //Style all anchor tags in section
     a{
@@ -163,9 +164,7 @@
         display:inline;
         }
     
-    // img{
-    //     width:100%
-    // }
+   
     // Flex ul image and text are in
     .plan-ahead{
         display:flex;
@@ -178,10 +177,10 @@
           width:50%;   
           position:absolute;
           left: -140px;
-          top: -76px;
+          top: -97px;
       
 
-        //Add box shawdow 
+        //Add box shawdow to the image
             img{
                 box-shadow: 25px 25px 0px 0px $tertiary; 
             }
@@ -211,7 +210,8 @@
             width:50%;
             position:absolute;;
             right: -145px;
-            bottom: -57px;
+            bottom: -132px;
+
             img{
                 box-shadow: -25px -25px 0px 0px $tertiary; 
             }       
@@ -227,8 +227,6 @@
                 text-align:left;
             }
         }
-        
-     
     }
 } //End of section section styles
 
@@ -279,15 +277,18 @@
 
         img{
             width:100%;
-            box-shadow:25px 25px 0 0 $tertiary;
+            box-shadow:20px 18px 0 0 $tertiary;
         }
     }
 
     .events-text{
         width: auto;
-        margin-left: 6%;
+        margin-left: 10%;
         h3{
             color:$tertiary;
+        }
+        p{
+            margin-top:2px;
         }
         a{
             background-color: $secondary;
@@ -303,7 +304,7 @@
 
 // image gallery styles
 
-// use flex-box so eahc image is side-by-sode
+// use flex-box so each image is side-by-sode
 .image-gallery{
     background-color:$quinary;
     padding:50px 0 50px 0;

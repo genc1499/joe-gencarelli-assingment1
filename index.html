@@ -12,24 +12,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     
 </head>
-<style>
-    @media screen and (max-width:600px){
-      .main-menu-item{
-          visibility:hidden;
-          
-      }
 
-      
-
-      .menu-button{
-          visibility: visible;
-          right:0;
-      }
-      header{
-          justify-content: flex-start;
-      }
-    }
-</style>
 <body>
     <!-- Anchor tag to skip to main content-->
     <a href="#home-main" class="skip-link">Skip to main content.</a>
@@ -37,9 +20,8 @@
     <!-- Hero image displayed in header -->
         
         <nav>
-       <button><span class="fa-solid fa-bars"></span></button>
+            <button><span class="fa-solid fa-bars"></span></button>
             <ul>
-                
                 <li class="main-nav-menu-item"><a href="./index.html">HOME</a></li>
                 <li class="main-nav-menu-item"><a href="#">ABOUT</a></li>
                 <li><a href=""></a><h1>Bar-One</h1></li>
@@ -48,11 +30,13 @@
                 
             </ul>
         </nav>
+
         <div class="header-flex">
             <div class="header-h2">
                 <h2>Bar-One <span>Place to be</span></h2> 
             </div>
-   
+            
+            <!--Image the will overlap into header-->
             <div class="offset-header-image">
                 <img src="./assets/header-box.jpg" alt="Black and white image of a wine glass hanger filled with wine glasses">
             </div>
@@ -62,31 +46,33 @@
     <main id="home-main">
         <section class="space-community">
             <div class="wrapper">
-           
+
                 <ul>
-                  
+
+                    <!--Icons to be displayed and styled in CSS-->
                     <li class="new-space-icon"><h3>New space</h3>
-               
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis laborum earum exercitationem. Consequuntur debitis dicta</p>  
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis laborum earum exercitationem. Consequuntur debitis dicta</p>  
                     </li>
 
                     <li class="community-icon"><h3>Community</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis laborum earum exercitationem. Consequuntur debitis dicta</p>  
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis laborum earum exercitationem. Consequuntur debitis dicta</p>  
                     </li>
 
                     <li class="blog-icon"><h3>Blog</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis laborum earum exercitationem. Consequuntur debitis dicta officia</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis laborum earum exercitationem. Consequuntur debitis dicta officia</p>
                     </li>
 
                     <li class="get-in-touch-icon"><h3>Get In Touch</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis laborum earum exercitationem. Consequuntur debitis dictaa</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis laborum earum exercitationem. Consequuntur debitis dictaa</p>
                     </li>
                 </ul> 
             </div>
+
         </section>
 
         <section class="plan-locations">
             <div class="wrapper"> 
+
                 <div class="plan-ahead">
                     <div class="plan-ahead-image wrapper-two">
                         <img src="./assets/left-image.jpg" alt="Angles view of chicly lit bar">    
@@ -108,12 +94,12 @@
                         <a href="#">Read More</a>
                     </div>
                
-
                     <div class="new-locations-image">
                         <img src="./assets/right-image.jpg" alt="Angles view of patrons sitting at a bar in the daytime">
                     </div> 
+
                 </div>
-            </div>         
+            </div> <!--Close wrapper-->        
          
         </section>
 
@@ -126,7 +112,7 @@
         </section>
 
         <section class="beer-image">
-            <!-- Background Image Here -->
+            <!-- Banner Image Here -->
         </section>
 
         <section class="events">
@@ -145,21 +131,24 @@
         </section>
     
 
-    <section class="image-gallery">
-        <div class="wrapper">
-            <ul>
-                <li><img src="./assets/gallery-image-1.jpg" alt="Front view of chic bar"></li>
-                <li><img src="./assets/gallery-image-2.jpg" alt="Close up of a hamburger abd fries"></li>
-                <li><img src="./assets/gallery-image-3.jpg"alt="Nicely garnished cocktail"></li>
-            </ul>
-        </div>
-    </section>
-</main>
+        <section class="image-gallery">
+            <div class="wrapper">
+
+                <ul>
+                    <li><img src="./assets/gallery-image-1.jpg" alt="Front view of chic bar"></li>
+                    <li><img src="./assets/gallery-image-2.jpg" alt="Close up of a hamburger abd fries"></li>
+                    <li><img src="./assets/gallery-image-3.jpg"alt="Nicely garnished cocktail"></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="copyright-text">
             <p>Copyright © 2019 HackerYou</p>
         </div>
 
     </footer>
+    
 </body>
 </html>
