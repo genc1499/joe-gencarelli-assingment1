@@ -5,15 +5,14 @@
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-    min-height:50vh;
+    min-height:60vh;
     width:100vw;
    
     // Style H2 - "Get in touch"
-    h2{
-        font-size:3.4rem;
-        line-height:58px;
-        letter-spacing:2.2px;
-        font-weight:bold;
+  
+
+    nav{
+        padding-top:25px;
     }
 }
 
@@ -21,7 +20,7 @@
 
 .contact{
     background-color:$quaternary;
-    padding:100px 0 200px 0;
+    padding:100px 0 100px 0;
     
 
     // Flex container so contact info and form are side-by-side
@@ -60,7 +59,8 @@
     // Adjusted Form styling
     form{
         padding:40px 50px;
-        margin-top:-15%;
+        margin-top:-18%;
+        width:65%;
     }
         
 }

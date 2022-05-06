@@ -1,0 +1,51 @@
+// All media queriers 
+
+// Display hamburger menu icon and collapse all other nav items except H1
+
+@media screen and (max-width:900px){
+   
+    nav{
+
+        display:flex;
+        flex-direction:row-reverse;
+        justify-content: space-between;
+    
+        .main-nav-menu-item{
+            visibility:hidden;
+            position : absolute;
+        }
+        button{
+            visibility: visible; 
+            padding-top:30px;
+        }
+
+        ul li{
+            padding:0;
+        }
+        h1{
+           
+            margin:30px 0 0 0;
+        }
+    }
+
+//Plan-ahead section
+.plan-locations{
+
+ .new-locations{
+     margin-top:-125px;
+ }
+}
+// Events Section
+.events{
+
+ .events-image{
+     width:100%;
+ }
+.events-text{
+
+ a{
+     width:35%;
+ }
+}
+}
+}

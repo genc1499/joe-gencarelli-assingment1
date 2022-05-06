@@ -18,7 +18,17 @@ img{
 
 // Navigation menu for each page's header
 
-nav ul{
+nav{
+
+    // Style and hide the hamburger menu icon ion each navigation bar
+    button{
+        visibility:hidden;
+        border:none;
+        background-color:transparent;
+        color:$tertiary; 
+    }
+
+    ul{
     display:flex;
     justify-content: center;
     color:$primary;
@@ -41,6 +51,7 @@ nav ul{
     a:hover, a:focus{
         color:$tertiary;
     }
+}
 }
 
 
@@ -128,4 +139,12 @@ footer{
     p{
         margin:0;
     }
+}
+
+.contact-header h2, .blog-header h2{
+    font-size:3.4rem;
+    line-height:58px;
+    letter-spacing:2.2px;
+    font-weight:bold;
+    margin-top:15%;
 }
