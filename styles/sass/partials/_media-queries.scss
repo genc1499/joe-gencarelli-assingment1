@@ -14,6 +14,7 @@
             visibility:hidden;
             position : absolute;
         }
+
         button{
             visibility: visible; 
             padding-top:30px;
@@ -22,30 +23,221 @@
         ul li{
             padding:0;
         }
+
         h1{
-           
             margin:30px 0 0 0;
         }
     }
 
-//Plan-ahead section
+    //Plan-ahead section
+    .plan-locations{
+
+        .new-locations{
+         margin-top:-125px;
+        }
+    }
+    // Events Section
+    .events{
+        padding:50px 0 50px 0;
+        .events-image{
+            width:100%;
+        }
+        .events-text{
+
+            a{
+            width:35%;
+            }
+        }   
+    }
+    // END OF MAIN PAGE QUERIES
+    // 
+    // CONTACT PAGE QUERIES
+
+    // Change for flex direction and increase form width
+    .contact{
+        form{
+            flex-direction:column;
+            width:75%;
+
+            // Increase width of input fields
+            input[type=text],input[type=email]
+            {
+                width:calc(100% - 10px);
+            }
+
+            // Add top-marghing to separete text and email input
+            input[type=email]
+            {
+                margin-top:25px;
+            }
+        }
+    }
+
+}
+   
+
+
+
+@media screen and (max-width:700px){
+// Plan locations section:
 .plan-locations{
+    padding: 378px 0 378px;
+     .plan-locations-text{
+         margin-top: 50px;
+     }
+    .plan-ahead-image, .new-locations-image{
+        width:100%;
+    }
+    .plan-ahead, .new-locations{
+       width:100%;
+    }
 
- .new-locations{
-     margin-top:-125px;
- }
+    .new-locations{
+        margin-top: 30px;
+
+    }
+
+    .new-locations-image{
+        bottom: -115px;
+    }
+
+    }
+
+
+      // Space-community section
+      .space-community{
+        ul{
+            flex-direction:column;
+        }
 }
-// Events Section
+// events section
 .events{
+    .events-text{
 
- .events-image{
-     width:100%;
- }
-.events-text{
+        a{
+        width:45%;
+        }
+    }   
 
- a{
-     width:35%;
- }
+}
+// Host a party section
+.host-a-party{
+    padding-bottom:40px;
+    a{
+        width:50%;
+    }
+}
+//END OF MAIN PAGE MEDIA QUERIES
+// START OF CONTACT PAGE MEDIA QUERIES
+
+.contact{
+    padding-bottom:20px;
+    form{
+        width:100%;
+        margin-top:-30%;
+    }   
+     .contact-info{
+        flex-direction:column-reverse;
+    }
+
+    .social-contact{
+        margin-top:10%;
+        align-self:left;
+    
+    }
+}
+    
+ 
+}
+
+@media screen and (max-width:600px)
+{
+    .wrapper{
+        width:85%;
+    }
+  
+  
+
+    // Host a party section
+    .host-a-party{
+        a{
+            width:100%;
+        }
+    }
+    // Events Section
+    .events{
+        padding-bottom:20px;
+        .events-content{
+            flex-direction:column;
+            .events-text{
+                margin-left:0;
+                margin-top:20px;
+            }
+            a{
+                width:100%;
+            }
+        }
+    }
+
+    .image-gallery{
+        padding:10px 0 10px 0;
+ 
+        ul{
+            flex-direction:column;
+            li{
+                padding:10px 0;
+            }
+            
+           
+                img{
+                    width:100%
+                }
+            
+        }
+    }
+    // END OF MAIN PAGE MEDIA QUERIES
+    //START OF CONTACT PAGE MEDIA QUERIES
+    .contact{
+        form{
+            margin-top:-45%;
+        }
+    }
+    
+}
+
+@media screen and (max-width:500px){
+    .plan-locations{
+        padding: 285px 0 285px;
+}
+
+// START CONTACT PAGE MEDIA QUERIES
+.contact{
+    .social-contact{
+        margin-top:15%;
+    }
 }
 }
+
+
+@media screen and (max-width:320px){
+
+    // Bar-One H2
+    .main-page-header{
+        h1{
+            line-height:191px;
+            span{
+                margin-top:-2%;
+                margin-right:15%;
+            }
+        }
+    }
+
+    
+    .plan-locations{
+        padding: 200px 0 200px;
+    }
+    // END OF MAIN PAGE MEDIA QUERIES
+    // START OF CONTACT PAGE MEDIA QUERIES
+    
+
 }

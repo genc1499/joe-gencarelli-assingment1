@@ -9,7 +9,9 @@
     width:100vw;
    
     // Style H2 - "Get in touch"
-  
+    // .contact-h2{
+        
+    // }    
 
     nav{
         padding-top:25px;
@@ -49,9 +51,12 @@
     // Align social media icons so they sit beside eachother
     .social-media{
         display:flex; 
-         // Add space between each icon
-        li{
-            flex-basis:10%;
+    // 
+    //      Add space between each icon
+        li
+        {
+            // flex-basis:10%;
+            margin-right:20px;
         }
         
     }
@@ -60,7 +65,7 @@
     form{
         padding:40px 50px;
         margin-top:-18%;
-        width:65%;
+        width:65%;   
     }
         
 }
