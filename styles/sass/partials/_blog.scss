@@ -9,9 +9,7 @@
     min-height:65vh;
     width:100vw;
 }
-    // Image the overlaps into header
   
-
 
 // Add backlground-color
 .blog-post-text{
@@ -24,28 +22,19 @@
         margin:0 auto;
     }
 
- 
-
-    // Re-size imgage
-    .mission-image{
-        width:130%;
-        position:relative;
-        left: -120px;
-    
-      
-      
-    }
-    
-    // Flex container container containing mission and recent posts
-   
-  
     // Aside styles
     aside{
         display:flex;
         flex-direction:column;
         background-color:$quinary;
         padding-left:16px;
-  
+
+         // Re-size imgage in aside and position relative to extend outside wrapper
+        .mission-image{
+            width:130%;
+            position:relative;
+            left: -120px;
+        }
     
         h3{
             font-size:1.95rem;
@@ -58,10 +47,11 @@
             margin:-10px 0 0 0;
         }
        
-            a{
+        .find-out-more{
             color:$tertiary;
-            }
-            li{
+        }
+
+        li{
             line-height:15px;
             margin-left:20px;
             position:relative;
@@ -78,18 +68,16 @@
                 font-size: 4rem;
                 left: -20px;
                 display:inline-block;
-            }
-           
-            }
-            .recent-posts{
+            } 
+        }
+
+        .recent-posts{
                 padding-bottom:16px;
         }
     }
-    
+    // Flex container with aside and blog post
     .blog-container{
         display:flex;
-     
-   
     }
 
     .misson{
@@ -101,33 +89,34 @@
         flex-direction:column;
     }
 
+    // Style and position image that will overlap with header
     .new-menu-image{
         position: relative;
         width: 98%;
         z-index: 1;
-        left: 137px;
-        bottom: 300px;
+        left: 117px;
+        bottom: 283px;
       
+            // Add box shadow to the image
             img{
-                box-shadow:-13px 19px 0px -2px $tertiary;
+                box-shadow:-10px 19px 0px -2px $tertiary;
             }
         }
     
     article{
         padding:20px 1px 41px 73px;
-      
         border-left:5px solid $tertiary;
-       position:relative;
+        position:relative;
         width:85%;
-        margin-top: -32%;
-        margin-left: 14%;
+        margin-top: -30%;
+        margin-left: 12%;
+        width: 100%;
         .blog-date{
             margin-top:-10px;
             color:$tertiary;
         }
 
         // Add bottom horizontal border that extends outside wrapper contraints
-
         &::after{
             content:'';
             position:absolute;
@@ -148,30 +137,8 @@
             font-size:1.4rem;
             line-height:19px;
         }
-
- 
     }   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Comments Section
@@ -189,7 +156,7 @@
     p{
         font-size:1.4rem;
         line-height:19px;
-        margin:0 0 0 0;
+        margin:0;
     }
 
     // Style the dates of each comment
@@ -244,7 +211,6 @@
                 border:2px solid $tertiary;
             }
         }
-     
     }
 }
 

@@ -1,19 +1,21 @@
 // All media queriers 
+// Styled from HomePage>ContactPage>BlogPage
 
 @media screen and (max-width:1200px){
-    // BLOG PAGE MEDIA QUERIES
+// BLOG PAGE MEDIA QUERIES
     .blog-post-text{
 
     // Reposition aside image
         .mission-image{
             left: -74px; 
         }
-    // Reposition Large Blog post Picture
 
+    // Reposition Large Blog post Picture
     .new-menu-image{
     left: 69px;
     }
 
+    // Adjust position of the article
     article{
     margin-top: -35%;
     margin-left: 7%;
@@ -21,10 +23,6 @@
     }
 
 }
-
-
-
-// Display hamburger menu icon and collapse all other nav items except H1
 
 @media screen and (max-width:900px){
 // MEDIA QUERIES FOR MAIN PAGE
@@ -53,24 +51,24 @@
             margin:30px 0 0 0;
         }
     }
-        // Overlapping image width adjustment
-        .main-page-header{
+    // Overlapping image on header width adjustment
+    .main-page-header{
 
-        
         .header-flex{
             .offset-header-image{
-            width:64%;
-        }
+                width:64%;
+            }
+        }  
     }
-    
-}
-// Plan-ahead section
+
+    // Plan-ahead section
     .plan-locations{
 
+        // Adjust width position of flex container
         .new-locations{
-         margin-top:-125px;
+            margin-top:-125px;
         }
-
+        // Chnage the width of each flex-child
         .new-locations-image, .plan-ahead-image{
             width:60%;
         }
@@ -83,7 +81,6 @@
             width:100%;
         }
         .events-text{
-
             a{
             width:35%;
             }
@@ -93,22 +90,21 @@
     
 // START OF CONTACT PAGE QUERIES
 
-    // Change form flex direction and increase form width
+// Change form flex direction and increase form width
     .contact{
         form{
             flex-direction:column;
             width:75%;
 
             // Increase width of input fields
-            input[type=text],input[type=email]
-            {
-                width:calc(100% - 10px);
+                input[type=text],input[type=email]
+                {
+                    width:calc(100% - 10px);
             }
-
             // Add top-marghing to separete text and email input
-            input[type=email]
-            {
-                margin-top:25px;
+                input[type=email]
+                {
+                    margin-top:25px;
             }
         }
     }
@@ -116,45 +112,54 @@
     // START OF BLOG PAGE MEDIAs QUERIES
 
     aside{
+        // Push the aside to the end of the container
         position:relative;
-            left: -43px;
-            span{
-                display: block;
-                margin-top: -28px;
-            }
-          }
+        left: -43px;
+        span{
+            display: block;
+            margin-top: -28px;
+        }
+    }
+
     .blog-post-text{
 
+        // Adjust the position left on overlapping image
         .new-menu-image{
             left: 11px; 
         }
-    article{
-        margin-top: -51%;
-        margin-left: 0%;
-        width:100%;
-    }
-}
-    // Comments Section{
-        .comments-container{
-            .comments{
-                .top-comment, .second-comment{
-                    width:100%;
-                }
-                form{
-                    width:100%;
-                    padding-left:0;
-                    padding-right:0;
-                }
-            }
-        }
     
+        // Adjust article margins and width
+        article{
+            margin-top: -43%;
+            margin-left: 3px;
+            width:100%;
+        }
     }
 
+    // Comments Section{
+    .comments-container{
+        .comments{
+            // Align Comments h4 to the start of the container
+            h4{
+                align-self:start;
+            }
+            .top-comment, .second-comment{
+                width:100%;
+            }
+            form{
+                width:100%;
+                padding-left:0;
+                padding-right:0;
+            }
+        }
+    }
+}
    
 @media screen and (max-width:700px){
 // START OF MEDIA QUERIES FOR MAIN PAGE 
 
     // Plan locations section
+    // Position and width adjustments for offset images
     .plan-locations{
         padding: 30px 0 30px 0;
         .plan-locations-text{
@@ -177,44 +182,44 @@
 
         .new-locations{
             margin-top: 30px;
-        }
-
-      
+        } 
     }
     // Space-community section
-        .space-community{
-            ul{
-                flex-direction:column;
-            }
+    .space-community{
+        ul{
+            flex-direction:column;
         }
+    }
 
     // events section
-        .events{
-            .events-text{
-                a{
-                width:45%;
-                }
-            }   
-        }
+    .events{
+        .events-text{
+            a{
+            width:45%;
+            }
+        }   
+    }
 
     // Host a party section
-        .host-a-party{
-            padding-bottom:40px;
-            a{
+    .host-a-party{
+        padding-bottom:40px;
+        a{
             width:50%;
-            }
         }
+    }
 
 //END OF MAIN PAGE MEDIA QUERIES
 
 // START OF CONTACT PAGE MEDIA QUERIES
 
+    // Form adjustments
     .contact{
         padding-bottom:20px;
         form{
             width:100%;
             margin-top:-30%;
         }   
+        // Reverse direction so contacts are below the form
         .contact-info{
             flex-direction:column-reverse;
         }
@@ -227,43 +232,43 @@
 
     // START OF BLOG PAGE MEDIA QUERIES
     .blog-container{
+        // Reverse so blog post is dispayed first with the aside below
         flex-direction:column-reverse;
         aside{
             left:40px;
             margin-top:30px;
+            // Style span so words in each h3 are stacked
             span{
                 display:inline;
                 margin-top:0;
             }
         }
-            article{
-                padding-left:30px;
-                margin-top:-62%;
-            }
-        
+        // Adjust margins on article
+        article{
+            padding-left:30px;
+            margin-top: -45%;
+            margin-left: 3px;
+        }  
     }
-
-    
- 
 }
 
 @media screen and (max-width:600px){
 
+    // Chanhe wrapper widths for mobile use
     .wrapper{
         width:85%;
     }
     .main-page-header{
 
-        
         .header-flex{
+            // Adjust image to take up full width of screen
             .offset-header-image{
             width:100%;
-        }
+            }
+        }  
     }
-    
-}
   
-    // Host a party section
+    // Host a party section anchor tag width change
     .host-a-party{
         a{
             width:100%;
@@ -284,24 +289,22 @@
         }
     }
 
+    // Adjust images to be displayed vertically
+ 
     .image-gallery{
         padding:30px 0 30px 0;
- 
         ul{
             flex-direction:column;
-          
             li{
-                
                 padding:10px 0;
                 width:100%;
-
             }
-                img{
-                    width:100%;
+            img{
+                width:100%;
                     
-                }  
-            }
+            }  
         }
+    }
     // END OF MAIN PAGE MEDIA QUERIES
 
     //START OF CONTACT PAGE MEDIA QUERIES
@@ -315,10 +318,10 @@
 
 @media screen and (max-width:500px){
     .plan-locations{
-    .plan-locations-text{
-        padding: 270px 0;
+        .plan-locations-text{
+            padding: 270px 0;
+        }   
     }
-}
 
 // START CONTACT PAGE MEDIA QUERIES
 .contact{
@@ -326,9 +329,31 @@
         margin-top:15%;
         }
     }
+
+.blog-container{
+    article{
+        margin-top:-65%;
+    }
+}
 }
 
 @media screen and (max-width:420px){
+
+    // Bar-One H1
+    // Adjust so words are stacked vertically
+    .main-page-header{
+        .header-flex{
+            text-align:center;
+        }
+        h1{
+            line-height:191px;
+            // Line up "place to be"
+            span{
+                margin-top:-2%;
+                margin-right:0;
+            }
+        }
+    }
     .plan-locations{
         .plan-locations-text{
             padding: 225px 0;
@@ -337,56 +362,58 @@
             }
             .new-locations-image{
                 right:-31px;
-            }
-            
+            }   
+        }
+    }
+
+    // Contact Page
+    .contact{
+        form{
+            padding:10px 10px;
         }
     }
     
     // START OF BLOG PAGE MEDIA QUERIES
     .blog-container{
-    article{
-      
-        margin-top:-80%;
-    }
-}
-.comments-container{
-    .comments{
-        .top-comment, .second-comment{
-            width:100%;
-        }
-        form{
-            input[type=text], input[type=email]{
-                width:calc(100% - 10px);
-            }
-            input[type=email]{
-                margin-top:20px;
-            }
+        article{
+            margin-top:-80%;
         }
     }
-}
 
+    // Form adjustments
+    .comments-container{
+        .comments{
+            .top-comment, .second-comment{
+                width:100%;
+            }
+            form{
 
+                input[type=text], input[type=email]{
+                    width:calc(100% - 10px);
+                }
+                input[type=email]{
+                    margin-top:20px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:320px){
 
-    // Bar-One H2
-    .main-page-header{
-        h1{
-            line-height:191px;
-            span{
-                margin-top:-2%;
-                margin-right:15%;
-            }
-        }
-    }
-
-    
     .plan-locations{
-        padding: 200px 0 200px;
+        padding: 33px 0 33px 0;
+        .plan-locations-text{
+            padding-top:170px;
+        }
     }
     // END OF MAIN PAGE MEDIA QUERIES
     // START OF CONTACT PAGE MEDIA QUERIES
-    
+    .blog-post-text{
 
+        .new-menu-image{
+            bottom:239px;
+        }
+
+    }
 }
