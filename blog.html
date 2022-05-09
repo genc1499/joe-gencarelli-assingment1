@@ -12,20 +12,8 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <style>
-    @media screen and (max-width:600px){
-     
-        
-     .misson{
-         width:100%;
-     }
-
-     article{
-         padding:0;
-     }
-        
-        .blog-container{
-            flex-direction:column-reverse;
-        }
+    body{
+        overflow-x:hidden;
     }
 </style>
 
@@ -51,46 +39,48 @@
 
         
             <!--Overlapping image into header-->
-            <div class="new-menu-image">
-                <img src="./assets/post-image.jpg" alt="Contemporary plated food items">
-            </div>
+          
         </div> <!--Wrapper closing tag-->
     </header>
 
     <main id="blog-main">
         <section class="blog-post-text">
-            
-           
-
-               
             <div class="blog-container wrapper">
-
-                <div class="mission-image">
-                    <img src="./assets/sidebar-image.jpg" alt="Bartender pouring a beer from the tap">
-                </div>
-
-                <div class="mission">
-                    <aside>
+              
+               <div class ="misson">
+                <aside>
+                    <div class="mission-image">
+                        <img src="./assets/sidebar-image.jpg" alt="Bartender pouring a beer from the tap">
+                    </div>
+                   
+                    
                         <div class="mission-text">
-                            <h3>Our mission</h3>
+                            <h3>Our <span>Misson</span></h3>
+                            
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit sint porro magni.</p>
                             <a href="#">Find out more.</a>
                         </div>
 
                         <div class="recent-posts">
-                            <h3>Recent Posts</h3>
-                                <ul>
-                                    <li><a href="#">Lorem ipsum dolor sit</a></li>
-                                    <li><a href="#"></a>amet consectetur adipisicing</a></li>
-                                    <li><a href="#"></a>Hic incidunt quidem ali</a></li>
-                                    <li><a href="#"></a>molestiae ipsam nesciunt </a></li>
-                                </ul>
-                        </div>  
-                    </aside>
-                </div>
-            
-            
+                            <h3>Recent <span>Posts</span></h3>
+                            <ul>
+                                <li><a href="#">Lorem ipsum dolor sit</a></li>
+                                <li><a href="#"></a>amet consectetur adipisicing</a></li>
+                                <li><a href="#"></a>Hic incidunt quidem ali</a></li>
+                                <li><a href="#"></a>molestiae ipsam nesciunt </a></li>
+                            </ul>
+                        </div>
+
+                        
                 
+              
+                </aside>
+            </div>
+                <div class="new-menu">
+
+                <div class="new-menu-image">
+                    <img src="./assets/post-image.jpg" alt="Contemporary plated food items">
+                </div>
                 
                 <article class ="new-menu-blog-post">
                     <h3>New menu!</h3>
@@ -103,7 +93,7 @@
                     <p>Facilis dignissimos dolorum error cupiditate officia consequuntur atque odit labore explicabo expedita. Quo sunt, non exercitationem repellat dicta in voluptas. Quisquam quo rem unde facere ut velit eveniet, eum quaeFacilis dignissimos dolorum error cupiditate officia consequuntur atque odit labore explicabo expedita. Quo sunt, non exercitationem repellat dicta in voluptas..</p>
                 </article>
             </div>
-
+        </div>
         </section>
 
         <section class="comments-container">

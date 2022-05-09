@@ -1,11 +1,36 @@
 // All media queriers 
 
+@media screen and (max-width:1200px){
+    // BLOG PAGE MEDIA QUERIES
+    .blog-post-text{
+
+    // Reposition aside image
+        .mission-image{
+            left: -74px; 
+        }
+    // Reposition Large Blog post Picture
+
+    .new-menu-image{
+    left: 69px;
+    }
+
+    article{
+    margin-top: -35%;
+    margin-left: 7%;
+    }
+    }
+
+}
+
+
+
 // Display hamburger menu icon and collapse all other nav items except H1
 
 @media screen and (max-width:900px){
-   
-    nav{
+// MEDIA QUERIES FOR MAIN PAGE
 
+// Display hamburger menu icon and collapse all other nav items except H1
+    nav{
         display:flex;
         flex-direction:row-reverse;
         justify-content: space-between;
@@ -24,18 +49,33 @@
             padding:0;
         }
 
-        h1{
+        h2{
             margin:30px 0 0 0;
         }
     }
+        // Overlapping image width adjustment
+        .main-page-header{
 
-    //Plan-ahead section
+        
+        .header-flex{
+            .offset-header-image{
+            width:64%;
+        }
+    }
+    
+}
+// Plan-ahead section
     .plan-locations{
 
         .new-locations{
          margin-top:-125px;
         }
+
+        .new-locations-image, .plan-ahead-image{
+            width:60%;
+        }
     }
+
     // Events Section
     .events{
         padding:50px 0 50px 0;
@@ -49,11 +89,11 @@
             }
         }   
     }
-    // END OF MAIN PAGE QUERIES
-    // 
-    // CONTACT PAGE QUERIES
+// END OF MAIN PAGE QUERIES
+    
+// START OF CONTACT PAGE QUERIES
 
-    // Change for flex direction and increase form width
+    // Change form flex direction and increase form width
     .contact{
         form{
             flex-direction:column;
@@ -73,91 +113,156 @@
         }
     }
 
-}
-   
+    // START OF BLOG PAGE MEDIAs QUERIES
 
+    aside{
+        position:relative;
+            left: -43px;
+            span{
+                display: block;
+                margin-top: -28px;
+            }
+          }
+    .blog-post-text{
 
-
-@media screen and (max-width:700px){
-// Plan locations section:
-.plan-locations{
-    padding: 378px 0 378px;
-     .plan-locations-text{
-         margin-top: 50px;
-     }
-    .plan-ahead-image, .new-locations-image{
+        .new-menu-image{
+            left: 11px; 
+        }
+    article{
+        margin-top: -51%;
+        margin-left: 0%;
         width:100%;
     }
-    .plan-ahead, .new-locations{
-       width:100%;
-    }
-
-    .new-locations{
-        margin-top: 30px;
-
-    }
-
-    .new-locations-image{
-        bottom: -115px;
-    }
-
-    }
-
-
-      // Space-community section
-      .space-community{
-        ul{
-            flex-direction:column;
+}
+    // Comments Section{
+        .comments-container{
+            .comments{
+                .top-comment, .second-comment{
+                    width:100%;
+                }
+                form{
+                    width:100%;
+                    padding-left:0;
+                    padding-right:0;
+                }
+            }
         }
-}
-// events section
-.events{
-    .events-text{
-
-        a{
-        width:45%;
-        }
-    }   
-
-}
-// Host a party section
-.host-a-party{
-    padding-bottom:40px;
-    a{
-        width:50%;
-    }
-}
-//END OF MAIN PAGE MEDIA QUERIES
-// START OF CONTACT PAGE MEDIA QUERIES
-
-.contact{
-    padding-bottom:20px;
-    form{
-        width:100%;
-        margin-top:-30%;
-    }   
-     .contact-info{
-        flex-direction:column-reverse;
-    }
-
-    .social-contact{
-        margin-top:10%;
-        align-self:left;
     
     }
-}
+
+   
+@media screen and (max-width:700px){
+// START OF MEDIA QUERIES FOR MAIN PAGE 
+
+    // Plan locations section
+    .plan-locations{
+        padding: 30px 0 30px 0;
+        .plan-locations-text{
+             padding:354px 0;
+            }
+        .plan-ahead-image, .new-locations-image{
+            width:100%;
+            }
+            .plan-ahead-image{
+                left:-69px;
+                top:-59px;
+            }
+            .new-locations-image{
+                right:-69px;
+                bottom:-90px;
+            }
+        .plan-ahead, .new-locations{
+            width:100%;
+        }
+
+        .new-locations{
+            margin-top: 30px;
+        }
+
+      
+    }
+    // Space-community section
+        .space-community{
+            ul{
+                flex-direction:column;
+            }
+        }
+
+    // events section
+        .events{
+            .events-text{
+                a{
+                width:45%;
+                }
+            }   
+        }
+
+    // Host a party section
+        .host-a-party{
+            padding-bottom:40px;
+            a{
+            width:50%;
+            }
+        }
+
+//END OF MAIN PAGE MEDIA QUERIES
+
+// START OF CONTACT PAGE MEDIA QUERIES
+
+    .contact{
+        padding-bottom:20px;
+        form{
+            width:100%;
+            margin-top:-30%;
+        }   
+        .contact-info{
+            flex-direction:column-reverse;
+        }
+
+        .social-contact{
+            margin-top:10%;
+            align-self:left;
+        }
+    }
+
+    // START OF BLOG PAGE MEDIA QUERIES
+    .blog-container{
+        flex-direction:column-reverse;
+        aside{
+            left:40px;
+            margin-top:30px;
+            span{
+                display:inline;
+                margin-top:0;
+            }
+        }
+            article{
+                padding-left:30px;
+                margin-top:-62%;
+            }
+        
+    }
+
     
  
 }
 
-@media screen and (max-width:600px)
-{
+@media screen and (max-width:600px){
+
     .wrapper{
         width:85%;
     }
-  
-  
+    .main-page-header{
 
+        
+        .header-flex{
+            .offset-header-image{
+            width:100%;
+        }
+    }
+    
+}
+  
     // Host a party section
     .host-a-party{
         a{
@@ -180,22 +285,25 @@
     }
 
     .image-gallery{
-        padding:10px 0 10px 0;
+        padding:30px 0 30px 0;
  
         ul{
             flex-direction:column;
+          
             li{
+                
                 padding:10px 0;
+                width:100%;
+
             }
-            
-           
                 img{
-                    width:100%
-                }
-            
+                    width:100%;
+                    
+                }  
+            }
         }
-    }
     // END OF MAIN PAGE MEDIA QUERIES
+
     //START OF CONTACT PAGE MEDIA QUERIES
     .contact{
         form{
@@ -207,17 +315,58 @@
 
 @media screen and (max-width:500px){
     .plan-locations{
-        padding: 285px 0 285px;
+    .plan-locations-text{
+        padding: 270px 0;
+    }
 }
 
 // START CONTACT PAGE MEDIA QUERIES
 .contact{
     .social-contact{
         margin-top:15%;
+        }
     }
 }
+
+@media screen and (max-width:420px){
+    .plan-locations{
+        .plan-locations-text{
+            padding: 225px 0;
+            .plan-ahead-image{
+                left:-31px;
+            }
+            .new-locations-image{
+                right:-31px;
+            }
+            
+        }
+    }
+    
+    // START OF BLOG PAGE MEDIA QUERIES
+    .blog-container{
+    article{
+      
+        margin-top:-80%;
+    }
+}
+.comments-container{
+    .comments{
+        .top-comment, .second-comment{
+            width:100%;
+        }
+        form{
+            input[type=text], input[type=email]{
+                width:calc(100% - 10px);
+            }
+            input[type=email]{
+                margin-top:20px;
+            }
+        }
+    }
 }
 
+
+}
 
 @media screen and (max-width:320px){
 

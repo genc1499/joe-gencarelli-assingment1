@@ -10,23 +10,14 @@
     width:100vw;
 }
     // Image the overlaps into header
-    .new-menu-image{
-    position:absolute;
-    right:0;
-    top:370px;
-    width:63%;
-    z-index:1;
-        img{
-            box-shadow:-13px 19px 0px -2px $tertiary;
-        }
-    }
+  
 
 
 // Add backlground-color
 .blog-post-text{
     background-color:$quaternary;
     padding:60px 0 60px 0;
-    position:relative;
+    
     .wrapper{
         width:90%;
         max-width:1200px;
@@ -37,32 +28,24 @@
 
     // Re-size imgage
     .mission-image{
-        width:25%;
-        margin-top:5%;
-        position:absolute;
-        left:0;
-        top:40px;
-        img{
-            box-shadow:38px 4px 0px -5px $quinary;
-        }
+        width:130%;
+        position:relative;
+        left: -120px;
+    
+      
+      
     }
     
     // Flex container container containing mission and recent posts
-    .mission{
-        display:flex;
-        flex-direction:column; 
-        width:50%;
-    }
+   
   
     // Aside styles
     aside{
         display:flex;
         flex-direction:column;
-        justify-content: space-between;
-        width:68%;
         background-color:$quinary;
-        padding: 15px 19px 13px 21px;
-     
+        padding-left:16px;
+  
     
         h3{
             font-size:1.95rem;
@@ -74,9 +57,7 @@
             line-height:19px;
             margin:-10px 0 0 0;
         }
-        .mission-text{
-            margin-top:7px;
-        }
+       
             a{
             color:$tertiary;
             }
@@ -98,35 +79,54 @@
                 left: -20px;
                 display:inline-block;
             }
+           
+            }
+            .recent-posts{
+                padding-bottom:16px;
         }
     }
     
     .blog-container{
         display:flex;
-        margin-top:27%;
+     
+   
     }
+
+    .misson{
+        width:100%;
+    }
+
+    .new-menu{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .new-menu-image{
+        position: relative;
+        width: 98%;
+        z-index: 1;
+        left: 137px;
+        bottom: 300px;
+      
+            img{
+                box-shadow:-13px 19px 0px -2px $tertiary;
+            }
+        }
     
     article{
         padding:20px 1px 41px 73px;
-        position:relative;
+      
         border-left:5px solid $tertiary;
-        // margin-left:12%;
-        width:96%;
+       position:relative;
+        width:85%;
+        margin-top: -32%;
+        margin-left: 14%;
         .blog-date{
             margin-top:-10px;
             color:$tertiary;
         }
 
-        // Add top and bottom horizontal border that extends outside wrapper contraints
-
-        &::before{
-            content:'';
-            position:absolute;
-            border-top:5px solid $tertiary;
-            top: 0px;
-            width: 115%;
-            left: 0px;
-        }
+        // Add bottom horizontal border that extends outside wrapper contraints
 
         &::after{
             content:'';
@@ -152,6 +152,27 @@
  
     }   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Comments Section
 .comments-container{
