@@ -313,6 +313,11 @@
             margin-top:-45%;
         }
     }
+    .blog-container{
+        article{
+            margin-top:-54%;
+        }
+    }
     
 }
 
@@ -324,17 +329,17 @@
     }
 
 // START CONTACT PAGE MEDIA QUERIES
-.contact{
-    .social-contact{
-        margin-top:15%;
+    .contact{
+        .social-contact{
+                margin-top:15%;
         }
     }
 
-.blog-container{
-    article{
-        margin-top:-65%;
+    .blog-container{
+        article{
+            margin-top:-65%;
+        }
     }
-}
 }
 
 @media screen and (max-width:420px){
@@ -380,6 +385,7 @@
         }
     }
 
+  
     // Form adjustments
     .comments-container{
         .comments{
@@ -407,6 +413,7 @@
             padding-top:170px;
         }
     }
+
     // END OF MAIN PAGE MEDIA QUERIES
     // START OF CONTACT PAGE MEDIA QUERIES
     .blog-post-text{

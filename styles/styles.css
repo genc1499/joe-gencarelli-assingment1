@@ -926,7 +926,7 @@ footer p {
   width: 85%;
   margin-top: -30%;
   margin-left: 12%;
-  width: 100%;
+  width: 85%;
 }
 .blog-post-text article .blog-date {
   margin-top: -10px;
@@ -937,7 +937,7 @@ footer p {
   position: absolute;
   border-bottom: 5px solid #FF8327;
   bottom: 0px;
-  width: 115%;
+  width: 116%;
   left: 0px;
 }
 .blog-post-text .new-menu-blog-post h3 {
@@ -1249,6 +1249,10 @@ footer p {
 
   .contact form {
     margin-top: -45%;
+  }
+
+  .blog-container article {
+    margin-top: -54%;
   }
 }
 @media screen and (max-width: 500px) {
