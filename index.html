@@ -15,33 +15,39 @@
 <style>
     .exit-button{
         position:absolute;
-      
+        transition:color .3s ease-in;
         top: -24px;
-right: 50px;
-font-size: 1rem;
+        right: 50px;
+        font-size: 1rem;
+        color:white;
     }
 
-.slide-out-menu ul{
-    flex-direction:column;
-}
+    .exit-button:hover, .exit-button:focus{
+        color:orange;
+    }
 
-.slide-out-menu li{
-    margin-bottom:50px;
-}
+    .slide-out-menu ul{
+        flex-direction:column;
+    }
 
+    .slide-out-menu li{
+        margin-bottom:50px;
+    }
 
     .slide-out-menu{
         background-color: black;
-   
-    top: 28px;
-    right: 0px;
-    position:absolute;
-    z-index:1000;
-    width: 0;
-    height:100vh;
-    text-align:center;
-    overflow:hidden;
+        top: 28px;
+        right: 0px;
+        position:absolute;
+        z-index:1000;
+        width: 0;
+        height:100vh;
+        text-align:center;
+        overflow:hidden;
     }
+.image-gallery button{
+    margin-left:80%;
+}
 </style>
 <body>
     <!-- Anchor tag to skip to main content-->
@@ -60,20 +66,20 @@ font-size: 1rem;
                 <li class="main-nav-menu-item"><a href="./contact.html">CONTACT</a></li>
                 
             </ul>
+
+            <!-- Slide out menu for hamburger click -->
             <div class="slide-out-menu">
                 
                 <ul>
-                    <li><button class='exit-button'>X</button></li>
+                    <!-- Exit button -->
+                    <li><button class='exit-button'>x</button></li>
                     <li class="slide-nav-menu-item"><a href="./index.html">HOME</a></li>
                     <li class="slide-nav-menu-item"><a href="#">ABOUT</a></li>
-
                     <li class="slide-nav-menu-item"><a href="./blog.html">BLOG</a></li>
-                    <li class="slide-nav-menu-item"><a href="./contact.html">CONTACT</a></li>
-                    
+                    <li class="slide-nav-menu-item"><a href="./contact.html">CONTACT</a></li>    
                 </ul>
             </div>
 
-           
         </nav>
     </div>
         <div class="header-flex">
@@ -181,11 +187,13 @@ font-size: 1rem;
 
         <section class="image-gallery">
             <div class="wrapper">
-
+                <button>Click me</button>
                 <ul>
-                    <li><img src="./assets/gallery-image-1.jpg" alt="Front view of chic bar"></li>
+                    <!-- <li><img src="./assets/gallery-image-1.jpg" alt="Front view of chic bar"></li>
                     <li><img src="./assets/gallery-image-2.jpg" alt="Close up of a hamburger abd fries"></li>
-                    <li><img src="./assets/gallery-image-3.jpg"alt="Nicely garnished cocktail"></li>
+                    <li><img src="./assets/gallery-image-3.jpg"alt="Nicely garnished cocktail"></li> -->
+                 
+                  
                 </ul>
             </div>
         </section>
@@ -204,26 +212,64 @@ font-size: 1rem;
         // Query the hamburger menu button
         const menuButton=document.querySelector('.menu-button');
 
-        // Query the exit button in slide out nav
+        // Query the exit button in the slide out nav
         const exitButton=document.querySelector('.exit-button');
         
         // Add an event listener to the hamburger menu button
         menuButton.addEventListener('click', ()=>{
         
-        // Query the slide out menu div
-        const slideMenu=document.querySelector('.slide-out-menu');
+            // Query the slide out menu div
+            const slideMenu=document.querySelector('.slide-out-menu');
     
-        // Add a transition to the menu item and chnage its width
-        slideMenu.style.transition="width .3s ease-in";
-        slideMenu.style.width="50vw";
+            // Add a transition to the menu item and change it's width
+            slideMenu.style.transition="width .3s ease-in";
+            slideMenu.style.width="50vw";
 
-        // Add an event listener to the exit button to close the menu
-        exitButton.addEventListener('click', ()=>{
+            // Add an event listener to the exit button to close the menu
+            exitButton.addEventListener('click', ()=>{
         
-            // Set width of slide-out to 0
-            slideMenu.style.width="0";
+                // Set width of slide-out to 0
+                slideMenu.style.width="0";
+            });
         });
-    });
+
+
+        // IMAGE CARUSAL
+
+        // Decalre an array with image sources
+        const imgArray = ["./assets/gallery-image-1.jpg","./assets/gallery-image-2.jpg","./assets/gallery-image-3.jpg"];
+        
+        // Query the image buttomn
+        const buttonImg=document.querySelector(".image-gallery button");
+        // decalre a count =0 
+        let x=0;
+      
+        // Add an event Listener to the buttton
+        buttonImg.addEventListener('click', (event)=>{
+            // Prevent the default
+           event.preventDefault();
+
+            // Check if x is less than the array length
+           if(x<imgArray.length)
+            {
+            // the imageSrc varibale will hold the source based on x - the position in the arrat
+            const imageSrc=imgArray[x];
+            // Query the image gallery ul
+            const gallery=document.querySelector(".image-gallery ul");
+            // Set the innerHTML to that pf that img at source X
+            gallery.innerHTML=(`<li><img src=${imageSrc}></li>`);
+            // Add one to the count
+            x+=1;
+            }
+
+            // If the condition is not met:
+            // Set the count to 0 to restart 
+            else{
+                
+                x=0;
+            }
+        });
+    
     </script>
     
 </body>
