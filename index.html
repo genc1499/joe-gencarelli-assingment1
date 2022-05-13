@@ -12,7 +12,37 @@
     <link rel="stylesheet" href="./styles/styles.css">
     
 </head>
+<style>
+    .exit-button{
+        position:absolute;
+      
+        top: -24px;
+right: 50px;
+font-size: 1rem;
+    }
 
+.slide-out-menu ul{
+    flex-direction:column;
+}
+
+.slide-out-menu li{
+    margin-bottom:50px;
+}
+
+
+    .slide-out-menu{
+        background-color: black;
+   
+    top: 28px;
+    right: 0px;
+    position:absolute;
+    z-index:1000;
+    width: 0;
+    height:100vh;
+    text-align:center;
+    overflow:hidden;
+    }
+</style>
 <body>
     <!-- Anchor tag to skip to main content-->
     <a href="#home-main" class="skip-link">Skip to main content.</a>
@@ -21,7 +51,7 @@
         <div class="wrapper">
         <nav>
             <!-- Hamburger menu incon  -->
-            <button><span class="fa-solid fa-bars"></span></button>
+            <button class="menu-button"><span class="fa-solid fa-bars"></span></button>
             <ul>
                 <li class="main-nav-menu-item"><a href="./index.html">HOME</a></li>
                 <li class="main-nav-menu-item"><a href="#">ABOUT</a></li>
@@ -30,6 +60,18 @@
                 <li class="main-nav-menu-item"><a href="./contact.html">CONTACT</a></li>
                 
             </ul>
+            <div class="slide-out-menu">
+                
+                <ul>
+                    <li><button class='exit-button'>X</button></li>
+                    <li class="slide-nav-menu-item"><a href="./index.html">HOME</a></li>
+                    <li class="slide-nav-menu-item"><a href="#">ABOUT</a></li>
+
+                    <li class="slide-nav-menu-item"><a href="./blog.html">BLOG</a></li>
+                    <li class="slide-nav-menu-item"><a href="./contact.html">CONTACT</a></li>
+                    
+                </ul>
+            </div>
 
            
         </nav>
@@ -155,6 +197,34 @@
         </div>
 
     </footer>
+
+    <script>
+        // SLIDE Out Menu
+
+        // Query the hamburger menu button
+        const menuButton=document.querySelector('.menu-button');
+
+        // Query the exit button in slide out nav
+        const exitButton=document.querySelector('.exit-button');
+        
+        // Add an event listener to the hamburger menu button
+        menuButton.addEventListener('click', ()=>{
+        
+        // Query the slide out menu div
+        const slideMenu=document.querySelector('.slide-out-menu');
+    
+        // Add a transition to the menu item and chnage its width
+        slideMenu.style.transition="width .3s ease-in";
+        slideMenu.style.width="50vw";
+
+        // Add an event listener to the exit button to close the menu
+        exitButton.addEventListener('click', ()=>{
+        
+            // Set width of slide-out to 0
+            slideMenu.style.width="0";
+        });
+    });
+    </script>
     
 </body>
 </html>
