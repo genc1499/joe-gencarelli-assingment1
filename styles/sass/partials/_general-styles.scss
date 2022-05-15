@@ -29,10 +29,10 @@ nav{
     }
 
     ul{
-    display:flex;
-    justify-content: center;
-    color:$primary;
-    font-weight:400;
+        display:flex;
+        justify-content: center;
+        color:$primary;
+        font-weight:400;
 
     li{
        padding:0 30px;
@@ -51,11 +51,43 @@ nav{
     a:hover, a:focus{
         color:$tertiary;
     }
-}
-// SLIDE OUT MENU STYLES
-}
+    }
+    // SLIDE OUT MENU STYLES
+    .exit-button{
+        position:absolute;
+        transition:color .3s ease-in;
+        top: -24px;
+        right: 50px;
+        font-size: 1rem;
+        color:white;
+    }
 
+    .exit-button:hover, .exit-button:focus{
+        color:orange;
+    }
 
+    .slide-out-menu ul{
+        flex-direction:column;
+    }
+
+    .slide-out-menu li{
+        margin-bottom:50px;
+    }
+
+    .slide-out-menu{
+        background-color: black;
+        top: 28px;
+        right: 0px;
+        position:absolute;
+        z-index:1000;
+        width: 0;
+        height:100vh;
+        text-align:center;
+        overflow:hidden;
+    }
+    
+
+}
 // Form styling
 
 form{

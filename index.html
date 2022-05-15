@@ -12,43 +12,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     
 </head>
-<style>
-    .exit-button{
-        position:absolute;
-        transition:color .3s ease-in;
-        top: -24px;
-        right: 50px;
-        font-size: 1rem;
-        color:white;
-    }
 
-    .exit-button:hover, .exit-button:focus{
-        color:orange;
-    }
-
-    .slide-out-menu ul{
-        flex-direction:column;
-    }
-
-    .slide-out-menu li{
-        margin-bottom:50px;
-    }
-
-    .slide-out-menu{
-        background-color: black;
-        top: 28px;
-        right: 0px;
-        position:absolute;
-        z-index:1000;
-        width: 0;
-        height:100vh;
-        text-align:center;
-        overflow:hidden;
-    }
-.image-gallery button{
-    margin-left:80%;
-}
-</style>
 <body>
     <!-- Anchor tag to skip to main content-->
     <a href="#home-main" class="skip-link">Skip to main content.</a>
@@ -242,33 +206,51 @@
         // Query the image buttomn
         const buttonImg=document.querySelector(".image-gallery button");
         // decalre a count =0 
+       
         let x=0;
+
       
+        
         // Add an event Listener to the buttton
         buttonImg.addEventListener('click', (event)=>{
             // Prevent the default
            event.preventDefault();
+           const gallery=document.querySelector(".image-gallery ul");
+        
 
             // Check if x is less than the array length
            if(x<imgArray.length)
             {
+                console.log(x);
             // the imageSrc varibale will hold the source based on x - the position in the arrat
             const imageSrc=imgArray[x];
             // Query the image gallery ul
-            const gallery=document.querySelector(".image-gallery ul");
+            // const gallery=document.querySelector(".image-gallery ul");
             // Set the innerHTML to that pf that img at source X
             gallery.innerHTML=(`<li><img src=${imageSrc}></li>`);
+
             // Add one to the count
             x+=1;
+
             }
 
+            else {
+              
+                imageSrc=imgArray[0];
+                gallery.innerHTML=(`<li><img src=${imageSrc}></li>`);
+                x=0;
+                console.log(x);
+            }
             // If the condition is not met:
             // Set the count to 0 to restart 
-            else{
+            // else{
                 
-                x=0;
-            }
+            //     x=0;
+            // }
+            
         });
+
+    
     
     </script>
     

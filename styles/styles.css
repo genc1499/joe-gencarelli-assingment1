@@ -349,6 +349,38 @@ nav ul a {
 nav ul a:hover, nav ul a:focus {
   color: #FF8327;
 }
+nav .exit-button {
+  position: absolute;
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+  top: -24px;
+  right: 50px;
+  font-size: 1rem;
+  color: white;
+}
+nav .exit-button:hover, nav .exit-button:focus {
+  color: orange;
+}
+nav .slide-out-menu ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+nav .slide-out-menu li {
+  margin-bottom: 50px;
+}
+nav .slide-out-menu {
+  background-color: black;
+  top: 28px;
+  right: 0px;
+  position: absolute;
+  z-index: 1000;
+  width: 0;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
 
 form {
   background-color: #220303;
@@ -760,12 +792,11 @@ footer p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.image-gallery ul li {
-  width: calc((100% - 60px) / 3);
+  background-color: #111010;
+  padding: 50px;
+  width: 50%;
+  border-radius: 3%;
+  margin: 0 auto;
 }
 
 .contact-header {

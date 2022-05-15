@@ -3,7 +3,7 @@
 
 
 // Query Select the form in the comments section
-const formInput = document.querySelector(".comments form");
+const formInput = document.querySelector(".comments-container form");
 
 
 // // Add an event listener to the form
@@ -71,10 +71,3 @@ formInput.addEventListener('submit', (event)=>{
 
 });
 
-// SLIDE Out Menu
-const menuButton=document.querySelector('.menu-button');
-console.log(menuButton);
-menuButton.addEventListener('click', ()=>{
-    const slideMenu=document.querySelector('.slide-out-menu');
-    slideMenu.style.visibility="visible";
-});
