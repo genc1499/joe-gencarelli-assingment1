@@ -310,6 +310,7 @@
 .image-gallery{
     background-color:$quinary;
     padding:50px 0 50px 0;
+    text-align: center;
     
     ul{
         display:flex;
@@ -321,9 +322,7 @@
         width:50%;
         border-radius:3%;
         margin:0 auto;
-
-
-        
+    
         // style for image carousel
         // set the width of each li
         // li{
@@ -332,6 +331,16 @@
         
 
         // }
+    }
+    // Button styles for image carousal
+    button{
+        margin-top:8px;
+        background-color: $secondary;
+        font-family: $barOne;
+        color:$primary;
+        width:10%;
+        border:none;
+        
     }
 }
 

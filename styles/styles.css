@@ -785,6 +785,7 @@ footer p {
 .image-gallery {
   background-color: #220303;
   padding: 50px 0 50px 0;
+  text-align: center;
 }
 .image-gallery ul {
   display: -webkit-box;
@@ -797,6 +798,14 @@ footer p {
   width: 50%;
   border-radius: 3%;
   margin: 0 auto;
+}
+.image-gallery button {
+  margin-top: 8px;
+  background-color: #BF2603;
+  font-family: "Tulpen One";
+  color: #FFFFFF;
+  width: 10%;
+  border: none;
 }
 
 .contact-header {

@@ -35,7 +35,7 @@ const imgArray = ["./assets/gallery-image-1.jpg","./assets/gallery-image-2.jpg",
 // Query the image buttomn
 const buttonImg=document.querySelector(".image-gallery button");
 // decalre a count =0 
-let x=0;
+let x=1;
 
 // Add an event Listener to the buttton
 buttonImg.addEventListener('click', (event)=>{
@@ -58,7 +58,7 @@ buttonImg.addEventListener('click', (event)=>{
     else {
         imageSrc=imgArray[0];
         gallery.innerHTML=(`<li><img src=${imageSrc}></li>`);
-        x=0;
+        x=1;
         console.log(x);
     }
             
