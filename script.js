@@ -1,6 +1,4 @@
-
-
-// SLIDE Out Menu
+// SLIDE Out Menu---------------------------------------------------------------------
 
 // Query the hamburger menu button
 const menuButton=document.querySelector('.menu-button');
@@ -9,8 +7,9 @@ const menuButton=document.querySelector('.menu-button');
 const exitButton=document.querySelector('.exit-button');
         
 // Add an event listener to the hamburger menu button
-menuButton.addEventListener('click', ()=>{
-        
+menuButton.addEventListener('click', (event)=>{
+    // prevent default
+    event.preventDefault();
     // Query the slide out menu div
     const slideMenu=document.querySelector('.slide-out-menu');
     
@@ -30,12 +29,34 @@ menuButton.addEventListener('click', ()=>{
   // IMAGE CAROUSAL-------------------------------------------------------------------
 
 // Decalre an array with image sources
-const imgArray = ["./assets/gallery-image-1.jpg","./assets/gallery-image-2.jpg","./assets/gallery-image-3.jpg"];
+const images = [
+    {
+        source:"./assets/gallery-image-1.jpg",
+        altText:"Front view of chic bar",
+    },
+    {
+        source:"./assets/gallery-image-2.jpg",
+        altText:"Close up of a hamburger and fries",
+
+    },
+    {
+        source:"./assets/gallery-image-3.jpg",
+        altText:"Nicely-garnished-cocktail"
+
+    }
+    
+];
         
-// Query the image buttomn
+// Query the image buttom
 const buttonImg=document.querySelector(".image-gallery button");
-// decalre a count =0 
+
+// decalre a count = 1, which will be the index for the images object 
 let x=1;
+console.log("Hell o there");
+
+// Declare varibales for the image source and alt text
+let imageSrc;
+let imageAlt;
 
 // Add an event Listener to the buttton
 buttonImg.addEventListener('click', (event)=>{
@@ -43,23 +64,25 @@ buttonImg.addEventListener('click', (event)=>{
     event.preventDefault();
     const gallery=document.querySelector(".image-gallery ul");
     // Check if x is less than the array length
-    if(x<imgArray.length){
+    
+    if(x<images.length){
         console.log(x);
-        // the imageSrc varibale will hold the source based on x - the position in the arrat
-        const imageSrc=imgArray[x];
-        // Query the image gallery ul
-        // const gallery=document.querySelector(".image-gallery ul");
-        // Set the innerHTML to that pf that img at source X
-        gallery.innerHTML=(`<li><img src=${imageSrc}></li>`);
+        // the imageSrc/altText varibales will hold the source based on x - the position in the arrat
+        imageSrc=images[x].source;
+        imageAlt=images[x].altText;
 
-        // Add one to the count
+        // Query the image gallery ul
+        // Set the innerHTML to that pf that img at source X
+        gallery.innerHTML=(`<li><img src=${imageSrc} alt=${imageAlt}></li>`);
+
+        // Add one to the count to display the next image on click
         x+=1;
     }
     else {
-        imageSrc=imgArray[0];
-        gallery.innerHTML=(`<li><img src=${imageSrc}></li>`);
+        imageSrc=images[0].source;
+        imageAlt=images[0].altText;
+        gallery.innerHTML=(`<li><img src=${imageSrc} alt=${imageAlt}></li>`);
         x=1;
-        console.log(x);
     }
             
 });
@@ -89,24 +112,24 @@ formInput.addEventListener('submit', (event)=>{
     const messageInput=document.getElementById('message');
     const messageValue=messageInput.value;
 
-// Check to make sure all inputs have been entered by user
+    // Check to make sure all inputs have been entered by user
     if(nameValue && emailValue && messageValue != ""){
 
-// Creat elements for each input
+        // Creat elements for each input
         const newDiv=document.createElement("div");
         const nameDisplay=document.createElement("p");
         const emailDisplay=document.createElement("p");
         const messageDisplay=document.createElement("p");
         const userImage=document.createElement("img");
 
-//Assign the textContent of each element to the corresponding input fields
+        //Assign the textContent of each element to the corresponding input fields
         nameDisplay.textContent=nameValue;
         emailDisplay.textContent=emailValue;
         messageDisplay.textContent=messageValue;
         userImage.src="http://placekitten.com/100/100";
         
 
-// Query select the comments section
+        // Query select the comments section
         const commentsSection=document.querySelector(".user-comments");
         commentsSection.append(newDiv);
         commentsSection.style.display="flexcolumn";
@@ -115,16 +138,16 @@ formInput.addEventListener('submit', (event)=>{
         commentsSection.style.margin="5% 0";
 
 
-// Append the users information to the html
+        // Append the users information to the html
         newDiv.append(userImage,nameDisplay,emailDisplay,messageDisplay);
         
  
         
-// Reset the fields
+        // Reset the fields
         nameInput.value='';
         emailInput.value='';
         messageInput.value='';
-}
+    }   
 
     // If the user doesnt' enter the input fields
     else{

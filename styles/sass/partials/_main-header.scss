@@ -319,11 +319,11 @@
         // Style for image carousel
         background-color: $quaternary;
         padding:50px;
-        width:50%;
         border-radius:3%;
         margin:0 auto;
+        justify-content: center;
     
-        // style for image carousel
+        // styles for image carousel, comment out width
         // set the width of each li
         // li{
         
