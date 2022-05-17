@@ -52,7 +52,7 @@ const buttonImg=document.querySelector(".image-gallery button");
 
 // decalre a count = 1, which will be the index for the images object 
 let x=1;
-console.log("Hell o there");
+
 
 // Declare varibales for the image source and alt text
 let imageSrc;
